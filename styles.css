@@ -1,11 +1,12 @@
+/* =========================================================
+   Root / Theme
+========================================================= */
 :root{
-  /* ===== Brand ===== */
   --brand-red:#9f0f0f;
   --brand-red-dark:#7f0b0b;
   --black:#0b0b0b;
   --white:#ffffff;
 
-  /* ===== Web-balanced palette ===== */
   --bg:#f7f7f7;
   --panel:#ffffff;
   --panel2:#f1f1f1;
@@ -14,12 +15,12 @@
   --line: rgba(0,0,0,.12);
 
   --accent: var(--brand-red);
-  --accent2: var(--brand-red-dark);
-
   --shadow: 0 12px 28px rgba(0,0,0,.18);
 }
 
-/* Base */
+/* =========================================================
+   Base
+========================================================= */
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
@@ -28,10 +29,13 @@ body{
   background: var(--bg);
   color: var(--text);
 }
-a{color:inherit;text-decoration:none}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
 .container{max-width:1100px;margin:0 auto;padding:0 18px}
 
-/* Header */
+/* =========================================================
+   Header / Nav
+========================================================= */
 .site-header{
   position:sticky;
   top:0;
@@ -39,6 +43,7 @@ a{color:inherit;text-decoration:none}
   background: var(--brand-red);
   border-bottom:1px solid rgba(255,255,255,.15);
 }
+
 .header-inner{
   height:68px;
   display:flex;
@@ -46,20 +51,43 @@ a{color:inherit;text-decoration:none}
   justify-content:space-between;
   gap:16px;
 }
-.brand{display:flex;align-items:center;gap:10px;font-weight:800}
-.brand-mark{
-  width:34px;height:34px;border-radius:10px;
-  display:grid;place-items:center;
-  background: rgba(255,255,255,.18);
-  color:#fff;
-  border:1px solid rgba(255,255,255,.25);
+
+/* Brand + Logo */
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:800;
 }
-.brand-text{color:#fff;letter-spacing:.3px}
 
-.nav{display:flex;gap:16px;align-items:center}
-.nav a{color:#fff;opacity:.9}
-.nav a:hover{opacity:1;text-decoration:underline}
+.brand-logo{
+  height:36px;
+  width:auto;
+  object-fit:contain;
+  border-radius:10px;
+}
 
+.brand-text{
+  color:#fff;
+  letter-spacing:.3px;
+}
+
+/* Nav */
+.nav{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+.nav a{
+  color:#fff;
+  opacity:.9;
+}
+.nav a:hover{
+  opacity:1;
+  text-decoration:underline;
+}
+
+/* Mobile Nav */
 .nav-toggle{
   display:none;
   background: rgba(255,255,255,.15);
@@ -69,16 +97,23 @@ a{color:inherit;text-decoration:none}
   border-radius:12px;
   cursor:pointer;
 }
+
 .mobile-nav{
   display:none;
   background: var(--brand-red);
   border-top:1px solid rgba(255,255,255,.15);
   padding:14px 18px;
 }
-.mobile-nav a{display:block;padding:10px 0;color:#fff}
+.mobile-nav a{
+  display:block;
+  padding:10px 0;
+  color:#fff;
+}
 .mobile-nav.open{display:block}
 
-/* Buttons */
+/* =========================================================
+   Buttons
+========================================================= */
 .btn{
   display:inline-flex;
   align-items:center;
@@ -88,6 +123,7 @@ a{color:inherit;text-decoration:none}
   border:1px solid var(--line);
   background:#eaeaea;
   font-weight:800;
+  cursor:pointer;
   transition:transform .12s ease, background .12s ease;
 }
 .btn:hover{transform:translateY(-1px)}
@@ -95,7 +131,7 @@ a{color:inherit;text-decoration:none}
 .btn-primary{
   background: var(--black);
   color:#fff;
-  border:1px solid rgba(0,0,0,.3);
+  border:1px solid rgba(0,0,0,.35);
 }
 .btn-primary:hover{background:#000}
 
@@ -105,17 +141,21 @@ a{color:inherit;text-decoration:none}
   color:#fff;
 }
 
-/* Hero */
+/* =========================================================
+   Hero
+========================================================= */
 .hero{
   background: var(--brand-red);
-  padding:64px 0 36px;
+  padding:64px 0 40px;
 }
+
 .hero-grid{
   display:grid;
-  grid-template-columns: 1.2fr .9fr;
+  grid-template-columns:1.2fr .9fr;
   gap:24px;
   align-items:start;
 }
+
 .pill{
   display:inline-block;
   padding:8px 12px;
@@ -123,24 +163,32 @@ a{color:inherit;text-decoration:none}
   background: rgba(255,255,255,.18);
   border:1px solid rgba(255,255,255,.25);
   color:#fff;
-  margin-bottom:14px;
   font-size:14px;
+  margin-bottom:14px;
 }
+
 .hero h1{
   font-size:44px;
   line-height:1.05;
   margin:0 0 14px;
   color:#fff;
 }
+
 .subhead{
-  color:#fff;
-  opacity:.92;
   font-size:17px;
   line-height:1.5;
+  color:#fff;
+  opacity:.92;
   margin-bottom:20px;
 }
-.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
 
+.hero-cta{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+/* Trust row */
 .trust-row{
   display:flex;
   gap:14px;
@@ -158,22 +206,26 @@ a{color:inherit;text-decoration:none}
 .trust-big{font-weight:900}
 .trust-small{font-size:13px;opacity:.9}
 
-/* Sections */
+/* =========================================================
+   Sections
+========================================================= */
 .section{padding:64px 0}
-.section.alt{
-  background: var(--panel2);
-}
+.section.alt{background: var(--panel2)}
+
 .section h2{
-  margin:0 0 10px;
   font-size:30px;
+  margin:0 0 10px;
 }
+
 .muted{
-  color: var(--muted);
+  color:var(--muted);
   line-height:1.6;
   margin-bottom:18px;
 }
 
-/* Cards */
+/* =========================================================
+   Cards / Layout
+========================================================= */
 .card{
   background: var(--panel);
   border:1px solid var(--line);
@@ -181,98 +233,96 @@ a{color:inherit;text-decoration:none}
   box-shadow: var(--shadow);
   padding:22px;
 }
-.hero-card .card{
-  background: var(--panel);
+
+.grid-2{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px;
 }
 
-/* Forms */
+.grid-3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+
+.hero-card .card + .card{
+  margin-top:16px;
+}
+
+/* Lists */
+.list{
+  padding-left:18px;
+}
+.list li{
+  margin-bottom:8px;
+}
+
+/* =========================================================
+   Forms (for later use)
+========================================================= */
 .form-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:12px;
-  margin-top:14px;
 }
-label{font-size:13px;color:var(--muted)}
+
+label{
+  font-size:13px;
+  color:var(--muted);
+}
+
 input, select{
   width:100%;
   padding:12px;
   border-radius:999px;
   border:1px solid rgba(0,0,0,.18);
   background:#fff;
+  color:var(--text);
 }
+
 .span-2{grid-column:span 2}
-.fineprint{font-size:12px;color:var(--muted);margin-top:12px}
 
-/* Grids */
-.steps,
-.grid-3,
-.grid-2{
-  display:grid;
-  gap:16px;
-}
-.steps{grid-template-columns:repeat(3,1fr)}
-.grid-3{grid-template-columns:repeat(3,1fr)}
-.grid-2{grid-template-columns:repeat(2,1fr)}
-
-.step-num{
-  width:30px;height:30px;
-  border-radius:10px;
-  display:grid;place-items:center;
-  background: rgba(159,15,15,.12);
-  border:1px solid rgba(159,15,15,.3);
-  color: var(--brand-red);
-  font-weight:900;
-  margin-bottom:10px;
-}
-
-/* FAQ */
-.faq{display:grid;gap:14px}
-details summary{
-  cursor:pointer;
-  font-weight:800;
-}
-details p{
-  margin-top:10px;
+.fineprint{
+  font-size:12px;
   color:var(--muted);
+  margin-top:12px;
 }
 
-/* Contact */
-.contact-grid{
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:18px;
-}
-.contact-actions{display:flex;gap:12px;flex-wrap:wrap}
-
-/* Footer */
+/* =========================================================
+   Footer
+========================================================= */
 .site-footer{
   background:#111;
   color:#fff;
   padding:26px 0;
 }
+
 .footer-inner{
   display:flex;
-  justify-content:space-between;
   align-items:center;
+  justify-content:space-between;
   flex-wrap:wrap;
   gap:12px;
 }
-.footer-links{display:flex;gap:14px;opacity:.85}
+
+.footer-links{
+  display:flex;
+  gap:14px;
+  opacity:.85;
+}
 .footer-links a:hover{text-decoration:underline}
 
-/* Responsive */
+/* =========================================================
+   Responsive
+========================================================= */
 @media(max-width:900px){
   .hero-grid,
-  .steps,
-  .grid-3,
   .grid-2,
-  .contact-grid{
+  .grid-3{
     grid-template-columns:1fr;
   }
-  h1{font-size:38px}
+
   .nav{display:none}
   .nav-toggle{display:inline-flex}
-}
-@media (min-width: 1000px){
-  .steps{ grid-template-columns: repeat(4, 1fr); }
 }
