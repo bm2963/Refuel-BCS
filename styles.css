@@ -34,7 +34,7 @@ img{max-width:100%;display:block}
 .container{max-width:1100px;margin:0 auto;padding:0 18px}
 
 /* =========================================================
-   Header / Nav
+   Header / Nav (default)
 ========================================================= */
 .site-header{
   position:sticky;
@@ -60,9 +60,24 @@ img{max-width:100%;display:block}
   font-weight:800;
 }
 
+/* Old badge ("R") */
+.brand-mark{
+  width:38px;
+  height:38px;
+  border-radius:12px;
+  display:grid;
+  place-items:center;
+  font-weight:900;
+  background: rgba(255,255,255,.18);
+  border:1px solid rgba(255,255,255,.25);
+  color:#fff;
+}
+
+/* Optional image logo */
 .brand-logo{
   height:36px;
   width:auto;
+  display:block;
   object-fit:contain;
   border-radius:10px;
 }
@@ -110,6 +125,80 @@ img{max-width:100%;display:block}
   color:#fff;
 }
 .mobile-nav.open{display:block}
+
+/* =========================================================
+   Header Variant: Black + Centered Logo Above Nav
+========================================================= */
+.site-header--black{
+  background:#000;
+  border-bottom:1px solid rgba(255,255,255,.14);
+}
+
+/* Stack layout used by your updated index.html */
+.header-stack{
+  padding:14px 0 10px;
+}
+
+.header-logo{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:8px 0 12px;
+}
+
+.logo-placeholder{
+  width:180px;
+  height:54px;
+  border-radius:14px;
+  border:1px dashed rgba(255,255,255,.35);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+  letter-spacing:.3px;
+  opacity:.9;
+}
+
+/* Center nav row, keep hamburger on the right */
+.header-navrow{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  position:relative;
+}
+
+/* Put hamburger at far right even when nav is centered */
+.header-navrow .nav-toggle{
+  position:absolute;
+  right:0;
+}
+
+/* Light nav styling for black header */
+.nav--light a{
+  color:#fff;
+  opacity:.9;
+}
+.nav--light a:hover{
+  opacity:1;
+  text-decoration:underline;
+}
+
+.nav-toggle--light{
+  background: rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.22);
+  color:#fff;
+}
+
+/* Black mobile nav variant */
+.mobile-nav--black{
+  background:#000;
+  border-top:1px solid rgba(255,255,255,.14);
+}
+.mobile-nav--black a{
+  color:#fff;
+}
 
 /* =========================================================
    Buttons
@@ -259,7 +348,36 @@ img{max-width:100%;display:block}
 }
 
 /* =========================================================
-   Forms (for later use)
+   QR / App Download Placeholder
+========================================================= */
+.qr-row{
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  margin-top:14px;
+}
+
+.qr-box{
+  width:120px;
+  height:120px;
+  border-radius:16px;
+  border:1px dashed rgba(0,0,0,.25);
+  background:#f3f3f3;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+  letter-spacing:.4px;
+  color:#111;
+  flex:0 0 auto;
+}
+
+.qr-text{
+  flex:1 1 auto;
+}
+
+/* =========================================================
+   Forms (kept for later, but harmless)
 ========================================================= */
 .form-grid{
   display:grid;
@@ -325,4 +443,10 @@ input, select{
 
   .nav{display:none}
   .nav-toggle{display:inline-flex}
+
+  /* keep hamburger visible in the black header layout */
+  .header-navrow .nav-toggle{
+    position:absolute;
+    right:0;
+  }
 }

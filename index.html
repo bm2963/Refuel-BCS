@@ -9,49 +9,54 @@
 </head>
 
 <body>
-  <!-- Top Bar -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">R</span>
-        <span class="brand-text">Refuel <strong>BCS</strong></span>
-      </a>
+  <!-- Header -->
+  <header class="site-header site-header--black">
+    <div class="container header-stack">
 
-      <nav class="nav">
+      <!-- 2) Logo placeholder centered ABOVE nav -->
+      <div class="header-logo">
+        <!-- Replace this placeholder with an <img> later -->
+        <!-- Example:
+          <img class="brand-logo" src="assets/images/logo.png" alt="Refuel BCS logo" />
+        -->
+        <div class="logo-placeholder" aria-label="Logo placeholder">
+          LOGO HERE
+        </div>
+      </div>
+
+      <!-- Nav row -->
+      <div class="header-navrow">
+        <nav class="nav nav--light">
+          <a href="how-it-works.html">How it works</a>
+          <a href="about.html">About</a>
+          <a href="interested.html">Interested?</a>
+        </nav>
+
+        <!-- Mobile toggle (right side) -->
+        <button class="nav-toggle nav-toggle--light" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-nav mobile-nav--black" id="mobileNav">
         <a href="how-it-works.html">How it works</a>
         <a href="about.html">About</a>
         <a href="interested.html">Interested?</a>
-      </nav>
-
-      <a class="btn btn-primary" href="interested.html">Get updates</a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-nav" id="mobileNav">
-      <a href="how-it-works.html">How it works</a>
-      <a href="about.html">About</a>
-      <a href="interested.html">Interested?</a>
-      <a class="btn btn-primary" href="interested.html">Get updates</a>
+      </div>
     </div>
   </header>
 
-  <!-- Hero -->
   <main>
+    <!-- Hero -->
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="pill">Mobile Fuel Delivery • Brazos Valley • Coming 2026</p>
           <h1>We bring gas to you—so you don’t have to.</h1>
           <p class="subhead">
-            Refuel BCS is preparing to launch later this year. Get notified when service begins in College Station,
-            Bryan, and surrounding areas.
+            Refuel BCS is preparing to launch later this year in College Station, Bryan, and surrounding areas.
           </p>
 
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="interested.html">Join the interest list</a>
-            <a class="btn btn-ghost" href="how-it-works.html">Learn how it works</a>
-          </div>
+          <!-- 4) Remove the link buttons under the headline (no hero-cta here) -->
 
           <div class="trust-row">
             <div class="trust-item">
@@ -69,8 +74,37 @@
           </div>
         </div>
 
-        <!-- 2 cards (stacked) -->
+        <!-- 5) Replace right side with "Download the app" placeholder + QR -->
         <div class="hero-card">
+          <div class="card">
+            <h2>Download the app (coming soon)</h2>
+            <p class="muted">
+              Once Refuel BCS launches, you’ll be able to download the app to request a one-time fueling or choose a subscription plan.
+            </p>
+
+            <div class="qr-row">
+              <div class="qr-box" aria-label="QR code placeholder">
+                QR CODE
+              </div>
+
+              <div class="qr-text">
+                <p class="muted" style="margin:0 0 10px;">
+                  This QR code will link to the App Store / Google Play when available.
+                </p>
+                <p class="fineprint" style="margin:0;">
+                  For now, this is a placeholder section.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4) Move the "How it works" + "About the company" cards down here to give the page length -->
+    <section class="section alt">
+      <div class="container">
+        <div class="grid-2">
           <div class="card">
             <h2>How it works</h2>
             <p class="muted">
@@ -80,7 +114,7 @@
             <p class="fineprint">Full rules, pricing approach, and plan options will be posted before launch.</p>
           </div>
 
-          <div class="card" style="margin-top:16px;">
+          <div class="card">
             <h2>About the company</h2>
             <p class="muted">
               Locally created and first responder owned—built to save you time and keep you moving.
@@ -92,22 +126,7 @@
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="section alt">
-      <div class="container">
-        <div class="card">
-          <h2>Interested in using Refuel BCS?</h2>
-          <p class="muted">
-            Join the interest list and we’ll email you as soon as we launch in 2026.
-          </p>
-          <div class="hero-cta" style="margin-top:10px;">
-            <a class="btn btn-primary" href="interested.html">Yes — keep me posted</a>
-            <a class="btn" href="how-it-works.html">See how it works</a>
-          </div>
-          <p class="fineprint">No spam. Just launch updates, service area info, and plan details.</p>
-        </div>
-      </div>
-    </section>
+    <!-- 6) Remove the "Interested in using Refuel BCS?" CTA section completely -->
   </main>
 
   <footer class="site-footer">
@@ -122,10 +141,8 @@
   </footer>
 
   <script>
-    // year
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // mobile nav toggle
     const btn = document.querySelector(".nav-toggle");
     const mobileNav = document.getElementById("mobileNav");
 
@@ -134,7 +151,6 @@
       btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
 
-    // close mobile nav on click
     mobileNav.querySelectorAll("a").forEach(a => {
       a.addEventListener("click", () => mobileNav.classList.remove("open"));
     });
