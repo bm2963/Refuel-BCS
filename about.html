@@ -3,13 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Refuel BCS | Mobile Fuel Delivery (Coming 2026)</title>
-  <meta name="description" content="Refuel BCS brings fuel to your car—home, work, or wherever you’re parked. Coming in 2026 to the Brazos Valley." />
+  <title>About | Refuel BCS</title>
+  <meta name="description" content="About Refuel BCS — locally created and first responder owned." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Top Bar -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html">
@@ -27,7 +26,6 @@
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
     </div>
 
-    <!-- Mobile Menu -->
     <div class="mobile-nav" id="mobileNav">
       <a href="how-it-works.html">How it works</a>
       <a href="about.html">About</a>
@@ -36,75 +34,78 @@
     </div>
   </header>
 
-  <!-- Hero -->
   <main>
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="pill">Mobile Fuel Delivery • Brazos Valley • Coming 2026</p>
-          <h1>We bring gas to you—so you don’t have to.</h1>
+          <p class="pill">Locally created • First responder owned</p>
+          <h1>Built in BCS. Built to help.</h1>
           <p class="subhead">
-            Refuel BCS is preparing to launch later this year. Get notified when service begins in College Station,
-            Bryan, and surrounding areas.
+            Refuel BCS is a mobile fueling service designed to save you time and keep you moving—
+            without the gas station stop.
           </p>
 
           <div class="hero-cta">
-            <a class="btn btn-primary" href="interested.html">Join the interest list</a>
-            <a class="btn btn-ghost" href="how-it-works.html">Learn how it works</a>
+            <a class="btn btn-primary" href="interested.html">Get launch updates</a>
+            <a class="btn btn-ghost" href="how-it-works.html">How it works</a>
           </div>
 
           <div class="trust-row">
             <div class="trust-item">
-              <span class="trust-big">Convenient</span>
-              <span class="trust-small">No station stops</span>
-            </div>
-            <div class="trust-item">
               <span class="trust-big">Local</span>
-              <span class="trust-small">Built for BCS</span>
+              <span class="trust-small">Brazos Valley focused</span>
             </div>
             <div class="trust-item">
-              <span class="trust-big">Safety-first</span>
-              <span class="trust-small">Professional process</span>
+              <span class="trust-big">Trusted</span>
+              <span class="trust-small">Safety-first mindset</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-big">Convenient</span>
+              <span class="trust-small">Fuel delivered to you</span>
             </div>
           </div>
         </div>
 
-        <!-- 2 cards (stacked) -->
         <div class="hero-card">
           <div class="card">
-            <h2>How it works</h2>
+            <h2>Coming in 2026</h2>
             <p class="muted">
-              Two options at launch: request a one-time fueling or choose a subscription plan to stay topped off.
+              We’re preparing to launch later this year. Join the interest list and we’ll notify you when service begins.
             </p>
-            <a class="btn btn-primary" href="how-it-works.html">See details</a>
-            <p class="fineprint">Full rules, pricing approach, and plan options will be posted before launch.</p>
-          </div>
-
-          <div class="card" style="margin-top:16px;">
-            <h2>About the company</h2>
-            <p class="muted">
-              Locally created and first responder owned—built to save you time and keep you moving.
-            </p>
-            <a class="btn btn-primary" href="about.html">Read more</a>
-            <p class="fineprint">Refuel BCS is not scheduling fuel through the website yet.</p>
+            <a class="btn btn-primary" href="interested.html">Join the list</a>
+            <p class="fineprint">No fueling is being scheduled through the website yet.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
     <section class="section alt">
       <div class="container">
-        <div class="card">
-          <h2>Interested in using Refuel BCS?</h2>
-          <p class="muted">
-            Join the interest list and we’ll email you as soon as we launch in 2026.
-          </p>
-          <div class="hero-cta" style="margin-top:10px;">
-            <a class="btn btn-primary" href="interested.html">Yes — keep me posted</a>
-            <a class="btn" href="how-it-works.html">See how it works</a>
+        <h2>Why Refuel BCS?</h2>
+        <p class="muted">
+          We’re building Refuel BCS for people who value time, safety, and convenience.
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Save time</h3>
+            <p>Skip station detours and lines. We bring fuel to your driveway or parking lot.</p>
           </div>
-          <p class="fineprint">No spam. Just launch updates, service area info, and plan details.</p>
+          <div class="card">
+            <h3>More convenient</h3>
+            <p>Ideal for busy schedules, families, and anyone who wants one less errand.</p>
+          </div>
+          <div class="card">
+            <h3>Fleet-friendly</h3>
+            <p>A simple option for small fleets and company vehicles (details coming at launch).</p>
+          </div>
+        </div>
+
+        <div class="callout card" style="margin-top:16px;">
+          <h3>Service area (launch)</h3>
+          <p class="muted" style="margin:0;">
+            College Station • Bryan • Surrounding Brazos Valley areas.
+          </p>
         </div>
       </div>
     </section>
@@ -115,26 +116,19 @@
       <p>© <span id="year"></span> Refuel BCS. All rights reserved.</p>
       <div class="footer-links">
         <a href="how-it-works.html">How it works</a>
-        <a href="about.html">About</a>
         <a href="interested.html">Interested?</a>
       </div>
     </div>
   </footer>
 
   <script>
-    // year
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    // mobile nav toggle
     const btn = document.querySelector(".nav-toggle");
     const mobileNav = document.getElementById("mobileNav");
-
     btn.addEventListener("click", () => {
       const isOpen = mobileNav.classList.toggle("open");
       btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
-
-    // close mobile nav on click
     mobileNav.querySelectorAll("a").forEach(a => {
       a.addEventListener("click", () => mobileNav.classList.remove("open"));
     });

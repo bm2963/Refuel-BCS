@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interested? | Refuel BCS</title>
+  <meta name="description" content="Join the Refuel BCS interest list and get notified when service launches in 2026." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">R</span>
+        <span class="brand-text">Refuel <strong>BCS</strong></span>
+      </a>
+
+      <nav class="nav">
+        <a href="how-it-works.html">How it works</a>
+        <a href="about.html">About</a>
+        <a href="interested.html">Interested?</a>
+      </nav>
+
+      <a class="btn btn-primary" href="#form">Join list</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="how-it-works.html">How it works</a>
+      <a href="about.html">About</a>
+      <a href="interested.html">Interested?</a>
+      <a class="btn btn-primary" href="#form">Join list</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="pill">Coming in 2026</p>
+          <h1>Want to be first in line when we launch?</h1>
+          <p class="subhead">
+            Refuel BCS isn’t scheduling fuel through the website yet. Join the interest list and we’ll notify you when service starts.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#form">Join the interest list</a>
+            <a class="btn btn-ghost" href="how-it-works.html">Learn how it works</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="card">
+            <h2>What you’ll get</h2>
+            <ul class="list">
+              <li>Launch announcement</li>
+              <li>Service area details</li>
+              <li>Pricing & subscription options</li>
+              <li>Early access offers (if available)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="form">
+      <div class="container contact-grid">
+        <div>
+          <h2>Join the interest list</h2>
+          <p class="muted">Fill this out and we’ll reach out when we’re ready to start service.</p>
+
+          <div class="card">
+            <div class="form-grid">
+              <label>
+                Name
+                <input type="text" placeholder="Your name" />
+              </label>
+
+              <label>
+                Phone (optional)
+                <input type="tel" placeholder="(###) ###-####" />
+              </label>
+
+              <label class="span-2">
+                Email
+                <input type="email" placeholder="you@example.com" />
+              </label>
+
+              <label class="span-2">
+                City / Area (optional)
+                <input type="text" placeholder="College Station, Bryan, etc." />
+              </label>
+
+              <label class="span-2">
+                Notes (optional)
+                <input type="text" placeholder="Single fueling, subscription interest, fleet, best time to contact, etc." />
+              </label>
+
+              <button class="btn btn-primary span-2" type="button">
+                Submit (placeholder)
+              </button>
+            </div>
+
+            <p class="fineprint">
+              This is a placeholder form for now (static site). When you’re ready, we can connect Formspree so submissions go to your email.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Prefer to contact us directly?</h3>
+          <p class="muted">Add your official phone/email here when ready.</p>
+          <ul class="list">
+            <li><strong>Email:</strong> hello@refuelbcs.com (placeholder)</li>
+            <li><strong>Phone:</strong> (###) ###-#### (placeholder)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Refuel BCS. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="how-it-works.html">How it works</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const btn = document.querySelector(".nav-toggle");
+    const mobileNav = document.getElementById("mobileNav");
+    btn.addEventListener("click", () => {
+      const isOpen = mobileNav.classList.toggle("open");
+      btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+    mobileNav.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", () => mobileNav.classList.remove("open"));
+    });
+  </script>
+</body>
+</html>
