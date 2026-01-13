@@ -387,7 +387,7 @@ transform: translateY(-10px); /* tweak -6px to -16px if needed */
 }
 
 /* =========================================
-   BLACK / WHITE HERO ELEMENTS (FINAL)
+   HERO + REQUEST FUEL: BLACK / WHITE SYSTEM
    ========================================= */
 
 /* Fast / Safe / Simple cards */
@@ -404,6 +404,18 @@ transform: translateY(-10px); /* tweak -6px to -16px if needed */
 
 .trust-item .trust-small{
   color:rgba(255,255,255,.85) !important;
+}
+
+/* ALL hero buttons (including "See how it works") */
+.hero .btn{
+  background:#000 !important;
+  color:#fff !important;
+  border:1px solid rgba(255,255,255,.25) !important;
+  font-weight:700;
+}
+
+.hero .btn:hover{
+  background:#111 !important;
 }
 
 /* Request Fuel card buttons */
