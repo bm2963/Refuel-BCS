@@ -25,7 +25,7 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <a class="btn btn-primary" href="#contact">Request Fuel</a>
+      <a class="btn btn-primary" href="#contact">Get Fuel</a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
     </div>
 
@@ -36,24 +36,24 @@
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
-      <a class="btn btn-primary" href="#contact">Request Fuel</a>
+      <a class="btn btn-primary" href="#contact">Get Fuel</a>
     </div>
   </header>
 
-  <!-- Hero -->
   <main>
-    <section class="hero">
+    <!-- Hero -->
+    <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="pill">Mobile Fuel Delivery • Brazos Valley</p>
-          <h1>We bring gas to you—so you don’t have to.</h1>
+          <h1>We bring gas to you — so you don’t have to.</h1>
           <p class="subhead">
-            Refuel BCS refuels your vehicle at home, work, or wherever you’re parked.
+            Get your vehicle refueled at home, work, or wherever you’re parked.
             Simple, safe, and convenient.
           </p>
 
           <div class="hero-cta">
-            <a class="btn btn-primary" href="#contact">Request Fuel</a>
+            <a class="btn btn-primary" href="#contact">Call / Text to Request</a>
             <a class="btn btn-ghost" href="#how">See how it works</a>
           </div>
 
@@ -71,118 +71,123 @@
               <span class="trust-small">No station stops</span>
             </div>
           </div>
+
+          <div class="hero-note">
+            <span class="dot"></span>
+            <p class="hero-note-text">
+              Static website — requests route to call/text/app (no forms).
+            </p>
+          </div>
         </div>
 
+        <!-- Static CTA Card (replaces the form) -->
         <div class="hero-card">
-          <div class="card">
-            <h2>Quick Request</h2>
-            <p class="muted">This site is static. Use this as a contact form section (email/text) or link to the app.</p>
+          <div class="card cta-card">
+            <h2>Request Fuel</h2>
+            <p class="muted">
+              Pick the option that’s easiest. We’ll confirm location, fuel type, and timing.
+            </p>
 
-            <div class="form-grid">
-              <label>
-                Name
-                <input type="text" placeholder="Your name" />
-              </label>
-              <label>
-                Phone
-                <input type="tel" placeholder="(###) ###-####" />
-              </label>
-              <label class="span-2">
-                Location
-                <input type="text" placeholder="Apartment / workplace address" />
-              </label>
-              <label>
-                Fuel Type
-                <select>
-                  <option>Regular</option>
-                  <option>Midgrade</option>
-                  <option>Premium</option>
-                  <option>Diesel</option>
-                </select>
-              </label>
-              <label>
-                Approx. gallons
-                <select>
-                  <option>5</option>
-                  <option>10</option>
-                  <option>15</option>
-                  <option>20</option>
-                </select>
-              </label>
-              <label class="span-2">
-                Notes
-                <input type="text" placeholder="Vehicle info, gate code, best time, etc." />
-              </label>
+            <div class="cta-actions">
+              <a class="btn btn-primary" href="tel:+1-555-555-5555">Call Now</a>
+              <a class="btn" href="sms:+1-555-555-5555">Text Us</a>
+              <a class="btn btn-outline" href="#">Open the App (placeholder)</a>
+            </div>
 
-              <button class="btn btn-primary span-2" type="button">
-                Submit Request (placeholder)
-              </button>
+            <div class="cta-mini">
+              <div class="mini">
+                <span class="mini-label">Hours</span>
+                <span class="mini-value">Mon–Sun • 8am–8pm</span>
+              </div>
+              <div class="mini">
+                <span class="mini-label">Service Area</span>
+                <span class="mini-value">College Station • Bryan</span>
+              </div>
+              <div class="mini">
+                <span class="mini-label">Email</span>
+                <span class="mini-value">hello@refuelbcs.com</span>
+              </div>
             </div>
 
             <p class="fineprint">
-              Want this form to actually submit? We can connect it to Formspree/Netlify Forms later without building a backend.
+              Replace the placeholders with your real phone number, email, and app link.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-<!-- How it works -->
-<section class="section" id="how">
-  <div class="container">
-    <h2>How It Works – Fueling Made Simple</h2>
-    <p class="muted">Four simple steps to get refueled without a gas station trip.</p>
-
-    <div class="steps">
-      <div class="step card">
-        <span class="step-num">1</span>
-        <h3>Park Your Vehicle</h3>
-        <p>
-          Make sure your vehicle is parked on <strong>private property</strong>—such as your home driveway,
-          a private parking lot, or an approved company location.
-        </p>
-        <p class="muted" style="margin-top:10px;">
-          Avoid enclosed spaces like garages so our technician can access your vehicle safely.
-        </p>
+    <!-- Credibility Strip -->
+    <section class="strip">
+      <div class="container strip-grid">
+        <div class="strip-item">
+          <h3>For busy people</h3>
+          <p class="muted">Fuel delivery that fits your day — no detours.</p>
+        </div>
+        <div class="strip-item">
+          <h3>For families</h3>
+          <p class="muted">Keep the week moving without last-minute station runs.</p>
+        </div>
+        <div class="strip-item">
+          <h3>For fleets</h3>
+          <p class="muted">Convenient top-offs for multiple vehicles (optional).</p>
+        </div>
       </div>
+    </section>
 
-      <div class="step card">
-        <span class="step-num">2</span>
-        <h3>Place Your Order</h3>
-        <p>
-          Open the <strong>Refuel BCS</strong> app to select your fuel type, location, and preferred delivery time.
-        </p>
-        <p class="muted" style="margin-top:10px;">
-          Important: Please ensure your fuel door is <strong>ajar/unlocked</strong> so our technician can access
-          the tank quickly and efficiently.
-        </p>
+    <!-- How it works -->
+    <section class="section" id="how">
+      <div class="container">
+        <h2>How It Works</h2>
+        <p class="muted">Four simple steps to get refueled without a gas station trip.</p>
+
+        <div class="steps">
+          <div class="step card">
+            <span class="step-num">1</span>
+            <h3>Park Your Vehicle</h3>
+            <p>
+              Park on <strong>private property</strong> (home driveway, private lot, or approved location).
+            </p>
+            <p class="muted" style="margin-top:10px;">
+              Avoid enclosed garages so our technician can access your vehicle safely.
+            </p>
+          </div>
+
+          <div class="step card">
+            <span class="step-num">2</span>
+            <h3>Request Service</h3>
+            <p>
+              Call/text us or use the app to share your location, fuel type, and preferred time.
+            </p>
+            <p class="muted" style="margin-top:10px;">
+              Please ensure your fuel door is <strong>accessible</strong>.
+            </p>
+          </div>
+
+          <div class="step card">
+            <span class="step-num">3</span>
+            <h3>We Deliver the Fuel</h3>
+            <p>
+              Our technician arrives, fuels your vehicle with care, and confirms when it’s complete.
+            </p>
+          </div>
+
+          <div class="step card">
+            <span class="step-num">4</span>
+            <h3>Drive Away Full</h3>
+            <p>
+              No lines, no station stops — just a full tank delivered to you.
+            </p>
+          </div>
+        </div>
       </div>
-
-      <div class="step card">
-        <span class="step-num">3</span>
-        <h3>We Deliver the Fuel</h3>
-        <p>
-          Our certified technician arrives at your location, fuels your vehicle with care,
-          and sends you a <strong>digital receipt</strong> upon completion.
-        </p>
-      </div>
-
-      <div class="step card">
-        <span class="step-num">4</span>
-        <h3>Drive Away Full</h3>
-        <p>
-          That’s it! No detours, no waiting in line—just a full tank delivered directly to you.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- Services -->
     <section class="section alt" id="services">
       <div class="container">
         <h2>Services</h2>
+
         <div class="grid-3">
           <div class="card">
             <h3>At-home Refueling</h3>
@@ -190,20 +195,17 @@
           </div>
           <div class="card">
             <h3>Workplace Refueling</h3>
-            <p>We Refuel while you work—great for commuters and fleet vehicles.</p>
+            <p>We refuel while you work — great for commuters and company vehicles.</p>
           </div>
           <div class="card">
-            <h3>Emergency top-off</h3>
+            <h3>Emergency Top-Off</h3>
             <p>Low fuel and stuck? We can bring a quick top-off to get you moving.</p>
           </div>
         </div>
 
         <div class="callout card">
           <h3>Service Area</h3>
-          <p class="muted">
-            College Station • Bryan • Surrounding areas (Brazos Valley).
-            <br />
-          </p>
+          <p class="muted">College Station • Bryan • Surrounding Brazos Valley areas.</p>
         </div>
       </div>
     </section>
@@ -212,6 +214,9 @@
     <section class="section" id="pricing">
       <div class="container">
         <h2>Pricing</h2>
+        <p class="muted">
+          Transparent and simple. Final pricing depends on fuel type and delivery needs.
+        </p>
 
         <div class="grid-2">
           <div class="card">
@@ -232,6 +237,17 @@
             </ul>
           </div>
         </div>
+
+        <div class="pricing-cta card">
+          <div>
+            <h3>Want an exact quote?</h3>
+            <p class="muted">Text us your location + fuel type + approx gallons, and we’ll confirm.</p>
+          </div>
+          <div class="pricing-actions">
+            <a class="btn btn-primary" href="#contact">Contact</a>
+            <a class="btn btn-outline" href="sms:+1-555-555-5555">Text Now</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -243,22 +259,22 @@
         <div class="faq">
           <details class="card">
             <summary>Is mobile refueling safe?</summary>
-            <p>Yes, when performed using proper equipment and procedures. We follow a consistent, professional process.</p>
+            <p>Yes — when performed with proper equipment and consistent procedures. Safety is built into the process.</p>
           </details>
 
           <details class="card">
             <summary>Do I need to be present?</summary>
-            <p>It depends on location and access (gates, parking garages, etc.). Many customers choose to be available by phone.</p>
+            <p>Sometimes. If we need access info (gates, lots, parking), being available by phone is usually enough.</p>
           </details>
 
           <details class="card">
-            <summary>What payment methods do you accept?</summary>
-            <p>Add your answer here (card, app payment, invoicing for fleets, etc.).</p>
+            <summary>Where can you refuel my vehicle?</summary>
+            <p>Typically on private property (driveways, private lots, approved workplace locations).</p>
           </details>
 
           <details class="card">
             <summary>How fast can you get here?</summary>
-            <p>Same-day availability is common. Exact timing depends on demand and your location.</p>
+            <p>Same-day availability is common. Timing depends on demand and your location.</p>
           </details>
         </div>
       </div>
@@ -270,18 +286,18 @@
         <div>
           <h2>Contact / Request Fuel</h2>
           <p class="muted">
-            Since the business uses an app for scheduling and payments, this page can simply direct customers to call/text or open the app.
+            This site is static — use call/text/app to request service.
           </p>
 
           <div class="card contact-card">
             <p><strong>Phone:</strong> (###) ###-####</p>
-            <p><strong>Email:</strong> hello@Refuelbcs.com</p>
+            <p><strong>Email:</strong> hello@refuelbcs.com</p>
             <p><strong>Hours:</strong> Mon–Sun • 8am–8pm</p>
             <p class="fineprint">Replace placeholders with the real info.</p>
 
             <div class="contact-actions">
               <a class="btn btn-primary" href="#">Open the App (placeholder)</a>
-              <a class="btn btn-ghost" href="mailto:hello@Refuelbcs.com">Email Us</a>
+              <a class="btn btn-outline" href="mailto:hello@refuelbcs.com">Email Us</a>
             </div>
           </div>
         </div>
@@ -296,6 +312,10 @@
           </ul>
 
           <div class="divider"></div>
+
+          <p class="muted" style="margin:0;">
+            Want to add Google reviews, testimonials, or partner logos later? Easy — still static.
+          </p>
         </div>
       </div>
     </section>
