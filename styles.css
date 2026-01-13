@@ -359,19 +359,22 @@ details p{margin-top:10px;color:var(--muted)}
   .steps{ grid-template-columns: repeat(4, 1fr); }
   .cta-actions{ grid-template-columns: 1fr; }
 }
-/* ===== Header logo sizing (final tuning) ===== */
+/* ===== Brand-forward header logo (FINAL) ===== */
+/* ===== Brand-forward header logo (FINAL) ===== */
+.site-header{
+  overflow:hidden; /* prevents any bleed */
+}
+
 .site-header .brand{
   display:flex;
   align-items:center;
-  height:68px;
-  overflow:hidden;
+  height:72px;          /* slightly taller = more premium */
 }
 
 .site-header .brand-logo{
-  height:48px !important;     /* 👈 strong, readable size */
+  height:52px !important;   /* 👈 brand-forward size */
   width:auto !important;
-  max-height:48px !important;
+  max-height:52px !important;
   display:block;
   object-fit:contain;
 }
-
