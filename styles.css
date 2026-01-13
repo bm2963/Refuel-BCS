@@ -574,3 +574,52 @@ transform: translateY(-10px); /* tweak -6px to -16px if needed */
   margin:14px 0 0;
   line-height: 1.6;
 }
+/* Founders group photo styling */
+.founders-photo-wrap{
+  margin: 18px 0 18px;
+}
+
+.founders-photo-frame{
+  position: relative;
+  padding: 14px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.12);
+  box-shadow: 0 18px 40px rgba(0,0,0,.18);
+}
+
+/* Decorative background flare */
+.founders-photo-frame::before{
+  content:"";
+  position:absolute;
+  inset:-40px -60px;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(160, 0, 0, .18), transparent 55%),
+    radial-gradient(circle at 80% 20%, rgba(0, 0, 0, .18), transparent 55%),
+    radial-gradient(circle at 50% 90%, rgba(160, 0, 0, .12), transparent 60%);
+  transform: rotate(-2deg);
+  z-index: 0;
+}
+
+.founders-photo{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* Remove extra spacing assumptions when no headshot is present */
+.founder-top.no-photo{
+  display:block;
+}
+
+.founder-meta h3{
+  margin:0 0 4px;
+}
+.founder-meta .muted{
+  margin:0;
+}
