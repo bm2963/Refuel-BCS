@@ -386,20 +386,34 @@ details p{margin-top:10px;color:var(--muted)}
 transform: translateY(-10px); /* tweak -6px to -16px if needed */
 }
 
-/* ===== Request Fuel card buttons: black w/ white text ===== */
+/* =========================================
+   BLACK / WHITE HERO ELEMENTS (FINAL)
+   ========================================= */
+
+/* Fast / Safe / Simple cards */
+.trust-item{
+  background:#000 !important;
+  color:#fff !important;
+  border:1px solid rgba(255,255,255,.25) !important;
+  box-shadow: 0 10px 22px rgba(0,0,0,.35) !important;
+}
+
+.trust-item .trust-big{
+  color:#fff !important;
+}
+
+.trust-item .trust-small{
+  color:rgba(255,255,255,.85) !important;
+}
+
+/* Request Fuel card buttons */
 .cta-card .btn{
   background:#000 !important;
   color:#fff !important;
   border:1px solid rgba(255,255,255,.25) !important;
+  font-weight:700;
 }
 
 .cta-card .btn:hover{
   background:#111 !important;
-}
-
-/* Optional: make them feel a bit more premium */
-.cta-card .btn{
-  font-weight:700;
-  padding:14px 18px;
-  border-radius:14px;
 }
