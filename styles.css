@@ -574,52 +574,48 @@ transform: translateY(-10px); /* tweak -6px to -16px if needed */
   margin:14px 0 0;
   line-height: 1.6;
 }
-/* Founders group photo styling */
+/* Founders group photo styling (refined) */
 .founders-photo-wrap{
-  margin: 18px 0 18px;
+  margin: 20px 0 28px;
+  display:flex;
+  justify-content:center;
 }
 
 .founders-photo-frame{
   position: relative;
-  padding: 14px;
-  border-radius: 20px;
-  overflow: hidden;
-  background: #fff;
-  border: 1px solid rgba(0,0,0,.12);
-  box-shadow: 0 18px 40px rgba(0,0,0,.18);
+  padding: 20px;
+  border-radius: 22px;
+  background: #000; /* BLACK CARD */
+  border: 1px solid rgba(255,255,255,.15);
+  box-shadow: 0 20px 45px rgba(0,0,0,.45);
+  max-width: 820px;      /* controls overall card width */
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
-/* Decorative background flare */
+/* Subtle background flare for depth */
 .founders-photo-frame::before{
   content:"";
   position:absolute;
-  inset:-40px -60px;
+  inset:-60px;
   background:
-    radial-gradient(circle at 20% 10%, rgba(160, 0, 0, .18), transparent 55%),
-    radial-gradient(circle at 80% 20%, rgba(0, 0, 0, .18), transparent 55%),
-    radial-gradient(circle at 50% 90%, rgba(160, 0, 0, .12), transparent 60%);
-  transform: rotate(-2deg);
+    radial-gradient(circle at 15% 20%, rgba(180,0,0,.25), transparent 55%),
+    radial-gradient(circle at 85% 30%, rgba(255,255,255,.12), transparent 60%),
+    radial-gradient(circle at 50% 90%, rgba(180,0,0,.18), transparent 65%);
   z-index: 0;
 }
 
+/* The image itself */
 .founders-photo{
   position: relative;
   z-index: 1;
   width: 100%;
+  max-width: 620px;      /* THIS makes the image smaller */
   height: auto;
   display: block;
   border-radius: 16px;
   object-fit: cover;
-}
-
-/* Remove extra spacing assumptions when no headshot is present */
-.founder-top.no-photo{
-  display:block;
-}
-
-.founder-meta h3{
-  margin:0 0 4px;
-}
-.founder-meta .muted{
-  margin:0;
+  box-shadow: 0 14px 30px rgba(0,0,0,.6);
 }
