@@ -510,3 +510,18 @@ transform: translateY(-10px); /* tweak -6px to -16px if needed */
   border:1px solid rgba(255,255,255,.25) !important;
   font-weight:600;
 }
+/* Founders */
+.founder-top{
+  display:flex;
+  gap:14px;
+  align-items:center;
+}
+
+.founder-photo{
+  width:72px;
+  height:72px;
+  border-radius:18px;
+  object-fit:cover;
+  border:1px solid rgba(0,0,0,.15);
+  background:#f1f1f1;
+}
