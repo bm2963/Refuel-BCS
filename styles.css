@@ -41,12 +41,13 @@ a{color:inherit;text-decoration:none}
   overflow:hidden; /* 👈 THIS stops logo bleed */
 }
 .header-inner{
-  height:68px;
+  height:96px;              /* 👈 BIG change */
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:16px;
+  gap:24px;
 }
+
 .brand{
   display:flex;
   align-items:center;
@@ -360,7 +361,6 @@ details p{margin-top:10px;color:var(--muted)}
   .cta-actions{ grid-template-columns: 1fr; }
 }
 /* ===== Brand-forward header logo (FINAL) ===== */
-/* ===== Brand-forward header logo (FINAL) ===== */
 .site-header{
   overflow:hidden; /* prevents any bleed */
 }
@@ -368,13 +368,16 @@ details p{margin-top:10px;color:var(--muted)}
 .site-header .brand{
   display:flex;
   align-items:center;
-  height:72px;          /* slightly taller = more premium */
+  padding-left:6px;
+  background: rgba(255,255,255,.08);
+  padding:8px 12px;
+  border-radius:14px;
 }
 
 .site-header .brand-logo{
-  height:52px !important;   /* 👈 brand-forward size */
+  height:72px !important;     /* 👈 THIS is the money value */
   width:auto !important;
-  max-height:52px !important;
+  max-height:72px !important;
   display:block;
   object-fit:contain;
 }
