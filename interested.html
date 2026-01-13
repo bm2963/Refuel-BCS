@@ -2,17 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Interested? | Refuel BCS</title>
-  <meta name="description" content="Learn what to expect from the Refuel BCS app, how mobile fuel delivery will work at launch, and how to contact us for updates in the Brazos Valley." />
+
+  <meta name="description" content="Preview the Refuel BCS app and learn about our mid-2026 launch bringing mobile fuel delivery to the Brazos Valley." />
+
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Page-only styles (kept minimal & on-theme) -->
+  <style>
+    /* App preview images */
+    .app-preview img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 18px;
+      border: 1px solid rgba(0,0,0,0.12);
+      background: #fff;
+    }
+
+    .app-caption {
+      margin-top: 12px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Top Bar (matches index/about) -->
+
+  <!-- Header (same as index / about) -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Refuel BCS Home">
+      <a class="brand" href="index.html">
         <img class="brand-logo" src="assets/logo.jpg" alt="Refuel BCS logo" />
       </a>
 
@@ -23,10 +45,10 @@
       </nav>
 
       <a class="btn btn-primary" href="interested.html">Get Fuel</a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
     </div>
 
-    <!-- Mobile Menu -->
+    <!-- Mobile nav -->
     <div class="mobile-nav" id="mobileNav">
       <a href="index.html">Home</a>
       <a href="about.html">About Refuel BCS</a>
@@ -36,78 +58,106 @@
   </header>
 
   <main>
+
     <!-- Hero -->
-    <section class="hero" id="top">
+    <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="pill">Interested in Refuel BCS?</p>
+          <p class="pill">App Preview • Coming Soon</p>
 
-          <h1>The app is coming soon — here’s what to expect.</h1>
+          <h1>The Refuel BCS app is on the way.</h1>
 
           <p class="subhead">
-            Refuel BCS is building a simple, app-based way to request fuel delivery in the Brazos Valley.
-            This page explains how the launch will work, what you’ll need for your first delivery, and
-            how to reach us for updates — no forms, no hassle.
+            We’re actively building the Refuel BCS mobile app to make fuel delivery simple,
+            reliable, and convenient for the Brazos Valley.
           </p>
 
           <div class="hero-cta">
+            <a class="btn btn-ghost" href="#app-preview">View app images</a>
+            <a class="btn btn-ghost" href="#app-on-the-way">Mid-2026 launch</a>
             <a class="btn btn-ghost" href="#expect">What to expect</a>
-            <a class="btn btn-ghost" href="#checklist">First-time checklist</a>
-            <a class="btn btn-ghost" href="#launch-faq">Launch FAQ</a>
-          </div>
-
-          <div class="hero-note">
-            <span class="dot" aria-hidden="true"></span>
-            <p class="hero-note-text">
-              Want a heads-up when the app goes live? Use one of the quick contact options on the right.
-            </p>
           </div>
         </div>
 
-        <!-- Static CTA Card (no forms) -->
+        <!-- Static CTA card -->
         <div class="hero-card">
           <div class="card cta-card">
             <h2>Get Launch Updates</h2>
             <p class="muted">
-              Pick the option that’s easiest. We’ll reply with availability details and next steps.
+              Want to be notified as we get closer to launch? Reach out anytime.
             </p>
 
             <div class="cta-actions">
-              <a class="btn btn-primary btn-app"
-                 href="mailto:hello@refuelbcs.com?subject=Refuel%20BCS%20App%20Updates&body=Hi%20Refuel%20BCS%2C%0A%0AI%E2%80%99m%20interested%20in%20mobile%20refueling%20in%20College%20Station%2FBryan.%20Can%20you%20share%20launch%20timing%20and%20availability%3F%0A%0AName%3A%0ALocation%20(area)%3A%0APreferred%20contact%3A%0A%0AThanks!">
+              <a class="btn btn-primary"
+                 href="mailto:hello@refuelbcs.com?subject=Refuel%20BCS%20Launch%20Updates">
                 Email for updates
               </a>
 
-              <a class="btn btn-outline"
-                 href="tel:+19795551234">
+              <a class="btn btn-outline" href="tel:+19795551234">
                 Call / Text (placeholder)
-              </a>
-
-              <a class="btn btn-outline"
-                 href="index.html#contact">
-                View contact info
               </a>
             </div>
 
             <div class="cta-mini">
               <div class="mini">
                 <span class="mini-label">Status</span>
-                <span class="mini-value">App: Coming Soon</span>
+                <span class="mini-value">In Development</span>
               </div>
               <div class="mini">
                 <span class="mini-label">Service Area</span>
-                <span class="mini-value">College Station • Bryan</span>
-              </div>
-              <div class="mini">
-                <span class="mini-label">Email</span>
-                <span class="mini-value">hello@refuelbcs.com</span>
+                <span class="mini-value">Bryan • College Station</span>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <p class="fineprint">
-              Replace the phone number and add real app store links when they’re ready.
+    <!-- App images -->
+    <section class="section" id="app-preview">
+      <div class="container">
+        <h2>App Preview</h2>
+        <p class="muted">
+          These screenshots show an early look at the Refuel BCS app experience.
+          Final designs and features may change as development continues.
+        </p>
+
+        <div class="grid-2 app-preview">
+          <div class="card">
+            <img src="assets/app-login.jpg" alt="Refuel BCS app login screen" />
+            <p class="app-caption">
+              <strong>Login Screen:</strong> Simple sign-in with clear actions for logging in,
+              password recovery, and signup.
             </p>
           </div>
+
+          <div class="card">
+            <img src="assets/app-dashboard.jpg" alt="Refuel BCS app dashboard" />
+            <p class="app-caption">
+              <strong>Dashboard:</strong> Quick access to requesting fuel, managing vehicles,
+              and updating your profile.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mid-2026 description -->
+    <section class="section alt" id="app-on-the-way">
+      <div class="container">
+        <div class="card">
+          <h2>The Refuel BCS App Is Coming Mid-2026</h2>
+
+          <p class="muted">
+            We’re targeting a mid-2026 launch for the Refuel BCS app and couldn’t be more excited
+            to bring mobile fuel delivery to the Brazos Valley. Our goal is to help people save time,
+            skip unnecessary stops, and keep their day moving.
+          </p>
+
+          <p class="muted">
+            As we continue building and testing, we’ll share updates along the way and gradually
+            prepare for early availability in Bryan and College Station.
+          </p>
         </div>
       </div>
     </section>
@@ -115,202 +165,59 @@
     <!-- What to expect -->
     <section class="section" id="expect">
       <div class="container">
-        <h2>What to Expect at Launch</h2>
+        <h2>What to Expect</h2>
         <p class="muted">
-          The goal is a smooth, simple flow: request fuel, get confirmation, and come back to a full tank.
-          Here’s what the early experience is designed to look like.
+          From request to completion, the experience is designed to be straightforward and reliable.
         </p>
 
         <div class="grid-3">
           <div class="card">
-            <h3>Simple requests</h3>
-            <p class="muted" style="margin:0;">
-              Submit a request with your location, fuel type, and timing preferences. We’ll confirm the details
-              before delivery so there are no surprises.
+            <h3>Easy Requests</h3>
+            <p class="muted">
+              Request fuel with just a few taps using your location, vehicle, and fuel preferences.
             </p>
           </div>
 
           <div class="card">
-            <h3>Clear updates</h3>
-            <p class="muted" style="margin:0;">
-              You’ll receive basic status updates (requested → confirmed → on the way → complete) so you always know
-              what’s happening.
+            <h3>Clear Updates</h3>
+            <p class="muted">
+              Stay informed with simple status updates so you always know what’s happening.
             </p>
           </div>
 
           <div class="card">
-            <h3>Professional finish</h3>
-            <p class="muted" style="margin:0;">
-              Deliveries are completed with a consistent process. After service, you’ll have confirmation that your
-              vehicle was refueled and ready to go.
-            </p>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top:16px;">
-          <h3 style="margin:0 0 10px;">Early access notes</h3>
-          <p class="muted" style="margin:0;">
-            Launch availability may start limited while routes and operations ramp up. If your area isn’t covered right
-            away, we’ll keep expanding based on demand.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- First-time checklist -->
-    <section class="section alt" id="checklist">
-      <div class="container">
-        <h2>First-Time Delivery Checklist</h2>
-        <p class="muted">
-          These quick basics help make delivery fast and clean — especially during early rollout.
-        </p>
-
-        <div class="grid-2">
-          <div class="card">
-            <h3>What to have ready</h3>
-            <ul class="list" style="margin:0 0 0 18px;">
-              <li><strong>Accurate location:</strong> address + helpful notes (gate code, building, parking level).</li>
-              <li><strong>Vehicle access:</strong> fuel door accessible and not blocked.</li>
-              <li><strong>Parked in a suitable spot:</strong> open-air, safe area with room to work.</li>
-              <li><strong>Phone reachable:</strong> in case we need a quick clarification.</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Good delivery locations</h3>
-            <ul class="list" style="margin:0 0 0 18px;">
-              <li>Home driveways (open-air)</li>
-              <li>Private apartment / business lots (where permitted)</li>
-              <li>Approved workplace locations</li>
-              <li>Other private property with safe access</li>
-            </ul>
-
-            <div class="divider"></div>
-
-            <p class="muted" style="margin:0;">
-              If you’re not sure a spot works, reach out first and we’ll help you pick a good location.
+            <h3>Reliable Service</h3>
+            <p class="muted">
+              Professional delivery with consistency, safety, and convenience in mind.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Fit / Not a fit -->
-    <section class="section" id="fit">
-      <div class="container">
-        <h2>Is This a Fit for You?</h2>
-        <p class="muted">
-          Refuel BCS is built for convenience — but a few conditions help us keep service consistent.
-        </p>
-
-        <div class="grid-2">
-          <div class="card">
-            <h3>Great fit if you…</h3>
-            <ul class="list" style="margin:0 0 0 18px;">
-              <li>Want to skip station stops during busy weeks</li>
-              <li>Have a predictable parking spot at home or work</li>
-              <li>Prefer clear communication and a simple process</li>
-              <li>Need occasional top-offs for multiple vehicles</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>May not be a fit if…</h3>
-            <ul class="list" style="margin:0 0 0 18px;">
-              <li>Your vehicle is always parked in an enclosed garage</li>
-              <li>Access to the vehicle is restricted (no entry, no permission)</li>
-              <li>You need a service outside the current coverage area</li>
-            </ul>
-
-            <p class="fineprint" style="margin-top:12px;">
-              Coverage and rules may evolve as the service expands.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Launch FAQ (specific to this page) -->
-    <section class="section alt" id="launch-faq">
-      <div class="container">
-        <h2>Launch FAQ</h2>
-        <p class="muted">
-          Questions specifically about rollout and early availability. (The main FAQ is on the Home page.)
-        </p>
-
-        <div class="faq">
-          <details class="card">
-            <summary>When will the app be available?</summary>
-            <p>Launch timing is being finalized. Email us for the most accurate status and early availability details.</p>
-          </details>
-
-          <details class="card">
-            <summary>Will service be available in both Bryan and College Station?</summary>
-            <p>That’s the focus area. We’ll expand coverage based on demand and operational readiness.</p>
-          </details>
-
-          <details class="card">
-            <summary>How do I request fuel without the app?</summary>
-            <p>During early rollout, you can contact us by email/phone and we’ll confirm details manually.</p>
-          </details>
-
-          <details class="card">
-            <summary>What details will you need from me?</summary>
-            <p>Location, fuel type, timing preference, and any access notes (gate codes, parking level, etc.).</p>
-          </details>
-
-          <details class="card">
-            <summary>Will pricing be listed in the app?</summary>
-            <p>That’s the plan. Pricing will be transparent and based on fuel type and delivery needs.</p>
-          </details>
-        </div>
-
-        <div class="card" style="margin-top:16px;">
-          <h3 style="margin:0 0 10px;">Next step</h3>
-          <p class="muted" style="margin:0 0 14px;">
-            If you want to be one of the first to try Refuel BCS, send a quick email and tell us your area
-            (Bryan / College Station) and best way to reach you.
-          </p>
-          <div class="contact-actions">
-            <a class="btn btn-primary"
-               href="mailto:hello@refuelbcs.com?subject=Interested%20in%20Refuel%20BCS&body=Hi%20Refuel%20BCS%2C%0A%0AI%E2%80%99d%20like%20to%20be%20notified%20when%20the%20app%20launches.%0A%0AName%3A%0AArea%20(Bryan%20or%20College%20Station)%3A%0APhone%20(optional)%3A%0A%0AThanks!">
-              Email Us
-            </a>
-            <a class="btn btn-outline" href="index.html#how">See how it works</a>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> Refuel BCS. All rights reserved.</p>
       <div class="footer-links">
         <a href="index.html#faq">FAQ</a>
         <a href="index.html#contact">Contact</a>
-        <a href="#">Privacy (Placeholder)</a>
       </div>
     </div>
   </footer>
 
   <script>
-    // year
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // mobile nav toggle
-    const btn = document.querySelector(".nav-toggle");
+    const toggle = document.querySelector(".nav-toggle");
     const mobileNav = document.getElementById("mobileNav");
 
-    btn.addEventListener("click", () => {
-      const isOpen = mobileNav.classList.toggle("open");
-      btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
-    });
-
-    // close mobile nav on click
-    mobileNav.querySelectorAll("a").forEach(a => {
-      a.addEventListener("click", () => mobileNav.classList.remove("open"));
+    toggle.addEventListener("click", () => {
+      mobileNav.classList.toggle("open");
     });
   </script>
+
 </body>
 </html>
