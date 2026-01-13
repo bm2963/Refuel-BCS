@@ -525,3 +525,52 @@ transform: translateY(-10px); /* tweak -6px to -16px if needed */
   border:1px solid rgba(0,0,0,.15);
   background:#f1f1f1;
 }
+/* Active nav link */
+.nav a.is-active,
+.mobile-nav a.is-active{
+  outline:2px solid rgba(255,255,255,.55);
+  outline-offset:2px;
+}
+/* Active nav link */
+.nav a.is-active,
+.mobile-nav a.is-active{
+  outline:2px solid rgba(255,255,255,.55);
+  outline-offset:2px;
+}
+
+/* Founders: premium layout */
+.founders-grid{
+  align-items: stretch;
+}
+
+.founder-card{
+  position: relative;
+}
+
+.founder-top{
+  display:flex;
+  gap:14px;
+  align-items:center;
+}
+
+.founder-photo{
+  width:88px;
+  height:88px;
+  border-radius:20px;
+  object-fit:cover;
+  border:1px solid rgba(0,0,0,.15);
+  background:#f1f1f1;
+}
+
+.founder-meta h3{
+  margin:0 0 4px;
+}
+
+.founder-meta .muted{
+  margin:0;
+}
+
+.founder-bio{
+  margin:14px 0 0;
+  line-height: 1.6;
+}

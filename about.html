@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>About Refuel BCS</title>
-  <meta name="description" content="Learn the story behind Refuel BCS, our mission, and what we’re building for the Brazos Valley." />
+  <meta name="description" content="Learn the story behind Refuel BCS, our mission, and our commitment to safe, convenient fuel delivery in the Brazos Valley." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -18,7 +18,7 @@
 
       <nav class="nav">
         <a href="index.html">Home</a>
-        <a href="about.html">About Refuel BCS</a>
+        <a href="about.html" class="is-active">About Refuel BCS</a>
         <a href="interested.html">Interested?</a>
       </nav>
 
@@ -29,7 +29,7 @@
     <!-- Mobile Menu -->
     <div class="mobile-nav" id="mobileNav">
       <a href="index.html">Home</a>
-      <a href="about.html">About Refuel BCS</a>
+      <a href="about.html" class="is-active">About Refuel BCS</a>
       <a href="interested.html">Interested?</a>
       <a class="btn btn-primary" href="interested.html">Get Fuel</a>
     </div>
@@ -43,296 +43,197 @@
         <h1>Built for busy days in the Brazos Valley.</h1>
         <p class="subhead">
           Refuel BCS is a mobile fuel delivery service designed to help you skip the gas station.
-          We’re focused on convenience, clear communication, and a smooth customer experience.
+          We’re focused on convenience, clear communication, and a smooth, professional experience.
         </p>
 
         <div class="hero-cta">
           <a class="btn btn-primary" href="interested.html">Interested in the App?</a>
-          <a class="btn btn-ghost" href="#story">Our Story</a>
+          <a class="btn btn-ghost" href="#team">Meet the Founders</a>
         </div>
       </div>
     </section>
 
-    <!-- Our Story -->
-    <section class="section" id="story">
+    <!-- 1) Meet the Founders -->
+    <section class="section" id="team">
+      <div class="container">
+        <h2>Meet the Founders</h2>
+        <p class="muted">Two founders with one goal: make refueling simpler for everyday life.</p>
+
+        <!-- side-by-side on desktop (your grid-2 should already stack on mobile) -->
+        <div class="grid-2 founders-grid">
+          <div class="card founder-card">
+            <div class="founder-top">
+              <!-- Replace with real photo when ready -->
+              <img class="founder-photo" src="assets/founder-christopher-braly.jpg" alt="Christopher Braly headshot (placeholder)" />
+              <div class="founder-meta">
+                <h3>Christopher Braly</h3>
+                <p class="muted">Co-Founder</p>
+              </div>
+            </div>
+
+            <p class="muted founder-bio">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, mauris a scelerisque aliquet,
+              elit metus tincidunt nibh, at feugiat nibh tellus et arcu. Donec vitae justo ut orci posuere tincidunt.
+              Morbi facilisis risus id commodo ullamcorper.
+            </p>
+          </div>
+
+          <div class="card founder-card">
+            <div class="founder-top">
+              <!-- Replace with real photo when ready -->
+              <img class="founder-photo" src="assets/founder-christopher-lamb.jpg" alt="Christopher Lamb headshot (placeholder)" />
+              <div class="founder-meta">
+                <h3>Christopher Lamb</h3>
+                <p class="muted">Co-Founder</p>
+              </div>
+            </div>
+
+            <p class="muted founder-bio">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget justo sed ligula egestas porta.
+              Integer laoreet, lacus at placerat aliquet, elit tortor posuere leo, vitae ultrices purus ligula sed urna.
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+            </p>
+          </div>
+        </div>
+
+        <p class="fineprint" style="margin-top:12px;">
+          Tip: once you have photos, drop them into <strong>assets/</strong> using the same filenames to avoid changing HTML.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2) Our Story -->
+    <section class="section alt" id="story">
       <div class="container">
         <h2>Our Story</h2>
-        <p class="muted">A quick look at how Refuel BCS started — placeholder text for now.</p>
+        <p class="muted">Why we started Refuel BCS — placeholder text for now.</p>
 
-        <div class="grid-2">
-          <div class="card">
-            <h3>Where it started</h3>
-            <p class="muted" style="margin:0;">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget justo sed
-              ligula egestas porta. Integer laoreet, lacus at placerat aliquet, elit tortor
-              posuere leo, vitae ultrices purus ligula sed urna. Vestibulum ante ipsum primis
-              in faucibus orci luctus et ultrices posuere cubilia curae.
-            </p>
-          </div>
+        <div class="card">
+          <p class="muted" style="margin:0;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget justo sed ligula egestas porta.
+            Integer laoreet, lacus at placerat aliquet, elit tortor posuere leo, vitae ultrices purus ligula sed urna.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Integer sit amet
+            tellus non erat aliquet tempus.
+          </p>
 
-          <div class="card">
-            <h3>Where we’re headed</h3>
-            <p class="muted" style="margin:0;">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, mauris a
-              scelerisque aliquet, elit metus tincidunt nibh, at feugiat nibh tellus et arcu.
-              Donec vitae justo ut orci posuere tincidunt. Morbi facilisis, risus id commodo
-              ullamcorper, augue tortor tincidunt velit, sed luctus arcu ipsum id metus.
-            </p>
-          </div>
+          <p class="muted" style="margin:12px 0 0;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, mauris a scelerisque aliquet,
+            elit metus tincidunt nibh, at feugiat nibh tellus et arcu. Donec vitae justo ut orci posuere tincidunt.
+            Morbi facilisis, risus id commodo ullamcorper, augue tortor tincidunt velit, sed luctus arcu ipsum id metus.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- Mission + Goal -->
-    <section class="section alt" id="mission">
+    <!-- 3) Our Mission and Values -->
+    <section class="section" id="mission-values">
       <div class="container">
-        <h2>Mission & Goal</h2>
-        <p class="muted">
-          These sections are easy to refine once you share the real back story and direction.
-        </p>
+        <h2>Our Mission & Values</h2>
+        <p class="muted">What we’re building — and what guides how we operate.</p>
 
         <div class="grid-2">
           <div class="card">
             <h3>Our Mission</h3>
             <p class="muted" style="margin:0;">
-              To deliver fuel safely and conveniently, helping customers reclaim time and reduce
-              the stress of last-minute gas station stops — with a service experience that feels
-              professional, simple, and dependable.
+              To make refueling effortless by delivering fuel directly to where vehicles are parked—saving time,
+              reducing stress, and keeping daily routines moving. We aim to provide a service that feels simple,
+              professional, and dependable from the first tap to the final confirmation.
             </p>
           </div>
 
           <div class="card">
-            <h3>Our Goal</h3>
-            <p class="muted" style="margin:0;">
-              To become the go-to mobile fuel option across the Brazos Valley by building a
-              trusted, app-based experience that makes refueling as easy as scheduling any
-              other service.
-            </p>
+            <h3>Our Values</h3>
+            <ul class="list" style="margin:0;">
+              <li><strong>Safety-first:</strong> We follow a consistent process and put safety ahead of speed.</li>
+              <li><strong>Clear communication:</strong> Customers should always know what to expect and when.</li>
+              <li><strong>Respect your time:</strong> We’re built to reduce friction—not add more steps.</li>
+              <li><strong>Professional service:</strong> Clean, courteous, and reliable delivery every time.</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Our Values -->
-    <section class="section" id="values">
+    <!-- 4) Commitment to Safety and Standards -->
+    <section class="section alt" id="safety">
       <div class="container">
-        <h2>Our Values</h2>
-        <p class="muted">A few things we won’t compromise on as we grow.</p>
+        <h2>Commitment to Safety & Standards</h2>
+        <p class="muted">
+          Mobile refueling should feel just as responsible as it is convenient. Our approach is built around
+          consistency, safe handling, and clear expectations.
+        </p>
 
         <div class="grid-3">
           <div class="card">
-            <h3>Safety first</h3>
-            <p class="muted" style="margin:0;">
-              We prioritize safe handling procedures and a consistent process every time.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Clear communication</h3>
-            <p class="muted" style="margin:0;">
-              Updates, timing, and expectations should be simple and easy to understand.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Respect your time</h3>
-            <p class="muted" style="margin:0;">
-              Our entire service is designed to remove friction and save you time.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- What makes us different -->
-    <section class="section alt" id="different">
-      <div class="container">
-        <h2>What Makes Us Different</h2>
-        <p class="muted">
-          If you want, we can tailor this to your real differentiators (speed, pricing model, fleet support, etc.).
-        </p>
-
-        <div class="grid-2">
-          <div class="card">
-            <h3>Designed around the app</h3>
-            <p class="muted" style="margin:0;">
-              Requests, updates, and scheduling are built to feel modern and easy — with a
-              simple experience from start to finish.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Local focus</h3>
-            <p class="muted" style="margin:0;">
-              We’re focused on serving the Brazos Valley well, building trust through consistent
-              service and professional standards.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Meet the Team -->
-    <section class="section" id="team">
-      <div class="container">
-        <h2>Meet the Founders</h2>
-        <p class="muted">Add real bios and headshots later — placeholders for now.</p>
-
-        <div class="grid-2">
-          <div class="card founder-card">
-            <div class="founder-top">
-              <!-- Replace src with the real photo when ready -->
-              <img class="founder-photo" src="assets/founder-christopher-braly.jpg" alt="Christopher Braly headshot (placeholder)" />
-              <div>
-                <h3 style="margin:0 0 4px;">Christopher Braly</h3>
-                <p class="muted" style="margin:0;">Co-Founder</p>
-              </div>
-            </div>
-
-            <p class="muted" style="margin:14px 0 0;">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, mauris a
-              scelerisque aliquet, elit metus tincidunt nibh, at feugiat nibh tellus et arcu.
-              Donec vitae justo ut orci posuere tincidunt. Morbi facilisis, risus id commodo
-              ullamcorper, augue tortor tincidunt velit, sed luctus arcu ipsum id metus.
-            </p>
-          </div>
-
-          <div class="card founder-card">
-            <div class="founder-top">
-              <!-- Replace src with the real photo when ready -->
-              <img class="founder-photo" src="assets/founder-christopher-lamb.jpg" alt="Christopher Lamb headshot (placeholder)" />
-              <div>
-                <h3 style="margin:0 0 4px;">Christopher Lamb</h3>
-                <p class="muted" style="margin:0;">Co-Founder</p>
-              </div>
-            </div>
-
-            <p class="muted" style="margin:14px 0 0;">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget justo sed
-              ligula egestas porta. Integer laoreet, lacus at placerat aliquet, elit tortor
-              posuere leo, vitae ultrices purus ligula sed urna. Vestibulum ante ipsum primis
-              in faucibus orci luctus et ultrices posuere cubilia curae.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Safety & Standards -->
-    <section class="section alt" id="safety">
-      <div class="container">
-        <h2>Safety & Standards</h2>
-        <p class="muted">
-          Placeholder content — we can rewrite this once you share your process and compliance approach.
-        </p>
-
-        <div class="grid-2">
-          <div class="card">
             <h3>Consistent process</h3>
             <p class="muted" style="margin:0;">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae
-              vestibulum arcu. Cras tempus, nisi in facilisis ultrices, justo nisl congue
-              ligula, ac luctus odio dui at nunc.
+              We use a repeatable step-by-step workflow for each delivery—confirming location details, verifying the
+              request, and completing service with a clean finish and confirmation.
             </p>
           </div>
 
           <div class="card">
-            <h3>Equipment & training</h3>
+            <h3>Safe delivery practices</h3>
             <p class="muted" style="margin:0;">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in sem
-              non lectus varius tristique. Donec a nibh vel leo feugiat efficitur.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Community / Local Commitment -->
-    <section class="section" id="community">
-      <div class="container">
-        <h2>Local Commitment</h2>
-        <p class="muted">A short section that makes the brand feel grounded and real.</p>
-
-        <div class="card">
-          <p class="muted" style="margin:0;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi
-            tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse
-            potenti. Curabitur non risus in lacus luctus tincidunt vitae sit amet arcu.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Timeline / Milestones -->
-    <section class="section alt" id="timeline">
-      <div class="container">
-        <h2>Timeline & Milestones</h2>
-        <p class="muted">A simple “where we are now” section — easy to update over time.</p>
-
-        <div class="grid-2">
-          <div class="card">
-            <h3>Now</h3>
-            <p class="muted" style="margin:0;">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
-              Vivamus at urna eget metus consectetur varius.
+              Deliveries are performed with an emphasis on safety at every step—proper positioning, attention to the
+              environment, and careful handling to reduce risk and maintain a professional standard.
             </p>
           </div>
 
           <div class="card">
-            <h3>Next</h3>
+            <h3>Customer clarity</h3>
             <p class="muted" style="margin:0;">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris laoreet
-              tellus non sem placerat, nec viverra urna fermentum.
+              We keep expectations simple and transparent—what’s needed, where service can occur, and how customers
+              can reach us if anything changes.
             </p>
           </div>
         </div>
 
         <div class="card" style="margin-top:16px;">
-          <h3>Later</h3>
           <p class="muted" style="margin:0;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel arcu at
-            magna blandit dignissim. Integer ac tristique sem.
+            As Refuel BCS grows, we’ll continue refining training, equipment readiness, and documented procedures to
+            keep the experience consistent and trustworthy.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Partners -->
-    <section class="section" id="partners">
+    <!-- 5) Local Commitment + Service Area + CTA -->
+    <section class="section" id="local">
       <div class="container">
-        <h2>Partners</h2>
-        <p class="muted">Optional: add logos later (still works great as a static page).</p>
+        <h2>Local Commitment</h2>
+        <p class="muted">
+          We’re building Refuel BCS with a local-first mindset—serving the Brazos Valley well, listening to customers,
+          and improving the experience over time.
+        </p>
 
-        <div class="grid-3">
+        <div class="grid-2">
           <div class="card">
-            <h3>Partner Logo</h3>
-            <p class="muted" style="margin:0;">Placeholder</p>
+            <h3>Serving our community</h3>
+            <p class="muted" style="margin:0;">
+              We believe the best service is consistent, respectful, and responsive. Our goal is to earn trust through
+              reliability and communication—so customers feel comfortable using Refuel BCS again and again.
+            </p>
           </div>
+
           <div class="card">
-            <h3>Partner Logo</h3>
-            <p class="muted" style="margin:0;">Placeholder</p>
-          </div>
-          <div class="card">
-            <h3>Partner Logo</h3>
-            <p class="muted" style="margin:0;">Placeholder</p>
+            <h3>Service Area</h3>
+            <p class="muted" style="margin:0;">
+              We currently focus on <strong>College Station</strong>, <strong>Bryan</strong>, and nearby Brazos Valley areas.
+              Coverage and availability will expand based on demand and operational readiness.
+            </p>
           </div>
         </div>
 
-        <div class="contact-actions" style="margin-top:16px;">
-          <a class="btn btn-primary" href="interested.html">Interested in using Refuel BCS?</a>
-          <a class="btn btn-outline" href="index.html#faq">Read the FAQ</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Service Area -->
-    <section class="section alt" id="area">
-      <div class="container">
-        <h2>Service Area</h2>
-        <p class="muted">Where we plan to operate and expand over time.</p>
-
-        <div class="card">
-          <p class="muted" style="margin:0;">
-            We currently focus on College Station, Bryan, and nearby Brazos Valley areas.
-            As demand grows, we’ll expand coverage and availability based on what customers need most.
+        <div class="card" style="margin-top:16px;">
+          <h3 style="margin:0 0 10px;">Ready to learn more?</h3>
+          <p class="muted" style="margin:0 0 14px;">
+            Visit the Interested page to see app availability details, download info, and what to expect as we launch.
           </p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="interested.html">Go to Interested?</a>
+            <a class="btn btn-outline" href="index.html#faq">Read the FAQ</a>
+          </div>
         </div>
       </div>
     </section>
