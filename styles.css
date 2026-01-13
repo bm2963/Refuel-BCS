@@ -385,3 +385,21 @@ details p{margin-top:10px;color:var(--muted)}
 /* remove the wasted top whitespace in the image */
 transform: translateY(-10px); /* tweak -6px to -16px if needed */
 }
+
+/* ===== Request Fuel card buttons: black w/ white text ===== */
+.cta-card .btn{
+  background:#000 !important;
+  color:#fff !important;
+  border:1px solid rgba(255,255,255,.25) !important;
+}
+
+.cta-card .btn:hover{
+  background:#111 !important;
+}
+
+/* Optional: make them feel a bit more premium */
+.cta-card .btn{
+  font-weight:700;
+  padding:14px 18px;
+  border-radius:14px;
+}
