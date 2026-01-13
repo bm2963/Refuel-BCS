@@ -364,20 +364,24 @@ details p{margin-top:10px;color:var(--muted)}
 .site-header{
   overflow:hidden; /* prevents any bleed */
 }
+/* ===== Header logo: readable badge ===== */
+.header-inner{
+  height:104px;                 /* taller header for badge logo */
+}
 
 .site-header .brand{
+  height:104px;
   display:flex;
   align-items:center;
-  padding-left:6px;
-  background: rgba(255,255,255,.08);
-  padding:8px 12px;
-  border-radius:14px;
+  overflow:hidden;              /* allows us to "crop" via shifting */
 }
 
 .site-header .brand-logo{
-  height:72px !important;     /* 👈 THIS is the money value */
+  height:86px !important;       /* BIG enough to read the badge */
   width:auto !important;
-  max-height:72px !important;
+  max-height:86px !important;
   display:block;
   object-fit:contain;
+/* remove the wasted top whitespace in the image */
+transform: translateY(-10px); /* tweak -6px to -16px if needed */
 }
