@@ -453,3 +453,53 @@ transform: translateY(-10px); /* tweak -6px to -16px if needed */
   font-size:16px;
   border-radius:16px;
 }
+/* Hero: Why Refuel BCS card – white background */
+.hero .why-card{
+  background:#fff !important;
+  color:#111 !important;
+  border:1px solid rgba(0,0,0,.15) !important;
+  box-shadow: 0 12px 28px rgba(0,0,0,.18) !important;
+}
+
+.hero .why-card h3{
+  color:#111 !important;
+}
+
+.hero .why-card .muted{
+  color:#333 !important;
+}
+/* =========================================
+   NAV MENU: black buttons w/ white text
+   ========================================= */
+
+/* Desktop nav links */
+.nav a{
+  background:#000;
+  color:#fff;
+  padding:8px 14px;
+  border-radius:12px;
+  font-weight:600;
+  opacity:1; /* override previous opacity */
+  border:1px solid rgba(255,255,255,.15);
+  transition: background .15s ease, transform .12s ease;
+}
+
+.nav a:hover{
+  background:#111;
+  transform: translateY(-1px);
+  text-decoration:none;
+}
+/* Mobile nav links */
+.mobile-nav a{
+  background:#000;
+  color:#fff;
+  padding:10px 14px;
+  border-radius:12px;
+  margin-bottom:8px;
+  font-weight:600;
+  border:1px solid rgba(255,255,255,.15);
+}
+
+.mobile-nav a:hover{
+  background:#111;
+}
