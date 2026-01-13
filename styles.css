@@ -429,3 +429,27 @@ transform: translateY(-10px); /* tweak -6px to -16px if needed */
 .cta-card .btn:hover{
   background:#111 !important;
 }
+/* Hero: "Why Refuel BCS?" card under Fast/Safe/Simple */
+.why-card{
+  margin-top:14px;
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.20);
+  color:#fff;
+}
+
+.why-card h3{
+  margin:0 0 8px;
+  color:#fff;
+}
+
+.why-card .muted{
+  color: rgba(255,255,255,.85);
+}
+
+/* Request Fuel: single big app button */
+.btn-app{
+  width:100%;
+  padding:18px 18px;     /* bigger button */
+  font-size:16px;
+  border-radius:16px;
+}
