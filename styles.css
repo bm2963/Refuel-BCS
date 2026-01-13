@@ -368,9 +368,9 @@ details p{margin-top:10px;color:var(--muted)}
 }
 
 .site-header .brand-logo{
-  height:36px !important;   /* 👈 THIS is the key change */
+  height:48px !important;     /* 👈 strong, readable size */
   width:auto !important;
-  max-height:36px !important;
+  max-height:48px !important;
   display:block;
   object-fit:contain;
 }
