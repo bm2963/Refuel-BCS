@@ -359,18 +359,19 @@ details p{margin-top:10px;color:var(--muted)}
   .steps{ grid-template-columns: repeat(4, 1fr); }
   .cta-actions{ grid-template-columns: 1fr; }
 }
-/* ===== Force header logo to behave (bulletproof) ===== */
+/* ===== Header logo sizing (final tuning) ===== */
 .site-header .brand{
-  max-height:68px;          /* matches your header height */
   display:flex;
   align-items:center;
-  overflow:hidden;          /* prevents bleed into hero */
+  height:68px;
+  overflow:hidden;
 }
 
-.site-header .brand img{
-  height:28px !important;   /* hard limit */
+.site-header .brand-logo{
+  height:36px !important;   /* 👈 THIS is the key change */
   width:auto !important;
-  max-height:28px !important;
+  max-height:36px !important;
   display:block;
   object-fit:contain;
 }
+
