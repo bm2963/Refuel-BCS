@@ -26,6 +26,33 @@
       color: var(--muted);
       line-height: 1.6;
     }
+    /* App image row (small + side-by-side) */
+  .app-image-row {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+  }
+
+  .app-image-row img {
+    max-width: 220px;   /* << controls size */
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    border: 1px solid rgba(0,0,0,0.15);
+    background: #fff;
+  }
+    /* Black highlight card */
+  .black-card {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .black-card .muted {
+    color: rgba(255,255,255,0.75);
+  }
+  
   </style>
 </head>
 
@@ -114,38 +141,26 @@
     </section>
 
     <!-- App images -->
+    <!-- App images -->
     <section class="section" id="app-preview">
       <div class="container">
         <h2>App Preview</h2>
         <p class="muted">
-          These screenshots show an early look at the Refuel BCS app experience.
-          Final designs and features may change as development continues.
+          A quick look at the Refuel BCS app as it’s currently being built.
+          Final designs and features may change.
         </p>
 
-        <div class="grid-2 app-preview">
-          <div class="card">
-            <img src="assets/app-login.jpg" alt="Refuel BCS app login screen" />
-            <p class="app-caption">
-              <strong>Login Screen:</strong> Simple sign-in with clear actions for logging in,
-              password recovery, and signup.
-            </p>
-          </div>
-
-          <div class="card">
-            <img src="assets/app-dashboard.jpg" alt="Refuel BCS app dashboard" />
-            <p class="app-caption">
-              <strong>Dashboard:</strong> Quick access to requesting fuel, managing vehicles,
-              and updating your profile.
-            </p>
-          </div>
+        <div class="app-image-row">
+          <img src="assets/app-login.jpg" alt="Refuel BCS app login screen" />
+          <img src="assets/app-dashboard.jpg" alt="Refuel BCS app dashboard screen" />
         </div>
       </div>
     </section>
 
     <!-- Mid-2026 description -->
-    <section class="section alt" id="app-on-the-way">
+    <section class="section" id="app-on-the-way">
       <div class="container">
-        <div class="card">
+        <div class="card black-card">
           <h2>The Refuel BCS App Is Coming Mid-2026</h2>
 
           <p class="muted">
