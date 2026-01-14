@@ -158,6 +158,14 @@
     @media (max-width: 980px) {
       .timeline-grid { grid-template-columns: 1fr; }
     }
+    .store-badges img {
+  display: block;
+}
+.store-badges a:hover {
+  transform: translateY(-1px);
+}
+
+
   </style>
 </head>
 
@@ -245,40 +253,40 @@
       </div>
     </section>
 
-    <!-- App Preview (images + badges) -->
-    <section class="section" id="app-preview">
-      <div class="container">
-        <h2>App Preview</h2>
-        <p class="muted">
-          These screenshots show an early look at the Refuel BCS app experience.
-          Final designs and features may change as development continues.
-        </p>
+      <!-- App Preview (images + badges) -->
+  <section class="section" id="app-preview">
+    <div class="container">
+      <h2>App Preview</h2>
+      <p class="muted">
+        These screenshots show an early look at the Refuel BCS app experience.
+        Final designs and features may change as development continues.
+      </p>
 
-        <div class="app-image-row">
-          <img src="assets/app-login.jpg" alt="Refuel BCS app login screen" />
-          <img src="assets/app-dashboard.jpg" alt="Refuel BCS app dashboard" />
-        </div>
-
-        <!-- ✅ Badges: BELOW images, ABOVE black card -->
-        <div class="store-badges" aria-label="App store badges">
-          <a class="badge" href="#" aria-label="Apple App Store coming soon (placeholder link)">
-            <span class="icon"></span>
-            <span>
-              Apple App Store
-              <small>Coming Soon</small>
-            </span>
-          </a>
-
-          <a class="badge" href="#" aria-label="Google Play coming soon (placeholder link)">
-            <span class="icon">▶</span>
-            <span>
-              Google Play
-              <small>Coming Soon</small>
-            </span>
-          </a>
-        </div>
+      <div class="app-image-row">
+        <img src="assets/app-login.jpg" alt="Refuel BCS app login screen" />
+        <img src="assets/app-dashboard.jpg" alt="Refuel BCS app dashboard" />
       </div>
-    </section>
+
+      <div class="store-badges" aria-label="App store badges">
+        <a href="#" aria-label="Apple App Store (coming soon)">
+          <img
+            src="assets/app-store-badge.svg"
+            alt="Download on the App Store"
+            style="height:48px;"
+          />
+        </a>
+
+        <a href="#" aria-label="Google Play (coming soon)">
+          <img
+            src="assets/google-play-badge.png"
+            alt="Get it on Google Play"
+            style="height:48px;"
+          />
+        </a>
+      </div>
+    </div>
+  </section>
+
 
     <!-- Mid-2026 black card + timeline -->
     <section class="section" id="app-on-the-way">
@@ -348,7 +356,7 @@
             </div>
 
             <p class="muted" style="margin:12px 0 0; opacity:.75;">
-              Progress estimate: <strong>58%</strong> (adjust anytime as development moves forward)
+              Progress estimate: <strong>58%</strong>
             </p>
           </div>
         </div>
