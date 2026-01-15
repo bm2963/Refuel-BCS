@@ -619,4 +619,20 @@ transform: translateY(-10px); /* tweak -6px to -16px if needed */
   object-fit: cover;
   box-shadow: 0 14px 30px rgba(0,0,0,.6);
 }
+/* Dark CTA buttons for bottom sections */
+.dark-cta .btn,
+.dark-cta .btn-outline,
+.dark-cta .btn-ghost {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.dark-cta .btn:hover,
+.dark-cta .btn-outline:hover,
+.dark-cta .btn-ghost:hover {
+  background-color: #111;
+  color: #fff;
+  border-color: #111;
+}
 
