@@ -34,6 +34,26 @@
     background-color: var(--brand-red);
     margin: 12px auto 0;
   }
+    /* Black card story styling */
+  .story-card {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* Ensure text contrast inside black cards */
+  .black-card p {
+    color: #fff;
+  }
+
+  .black-card .muted {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .story-card p + p {
+  margin-top: 16px;
+  }
+  .story-card p {
+    line-height: 1.7;
+  }
 
   </style>
   
@@ -103,10 +123,10 @@
         <!-- Combined team bio -->
         <div class="card" style="max-width: 900px; margin: 32px auto 0;">
           <p>
-            Refuel BCS was founded by Christopher Braly and Christopher Lamb, two lifelong
-            first responders with more than 50 years of combined emergency service experience.
+            Refuel BCS was founded by <strong>Chirstopher Braly</strong> and <strong>Christopher Lamb</strong> , two lifelong
+            <strong>first responders</strong> with more than <strong> 50 years of combined emergency service experience</strong>.
             With decades spent protecting and serving the Brazos Valley, they built Refuel BCS
-            on the same principles that guided their careers—safety, reliability, and trust.
+            on the same principles that guided their careers... <strong>safety</strong>, <strong>reliability</strong>, and <strong>trust</strong>.
           </p>
 
           <p class="muted">
@@ -119,41 +139,45 @@
     </section>
 
 
-    <!-- 2) Our Story -->
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">Our Story</h2>
     
-        <p>
-          Our story begins right here in the Brazos Valley. As local first responders,
-          we’ve spent our careers serving this community when it matters most—responding
-          to emergencies, protecting families, and helping neighbors through their toughest moments.
-          That experience shaped who we are and how we approach everything we do.
-        </p>
-    
-        <p>
-          We started Refuel BCS to build a reputable, locally owned mobile fueling service
-          that people can truly count on. Too often, convenience comes at the cost of service
-          or accountability. We believe it doesn’t have to. By staying local, hiring responsibly,
-          and operating with integrity, our goal is to build long-term relationships with
-          individuals, families, and businesses throughout the Brazos Valley.
-        </p>
-    
-        <p>
-          At its core, Refuel BCS is about safety and convenience. Whether you’re fueling a
-          personal vehicle, equipment, generators, or a fleet, traveling to a gas station
-          isn’t always practical—or safe. By bringing fuel directly to you, we help reduce
-          unnecessary trips, time away from work or family, and exposure to late-night or
-          roadside fueling risks.
-        </p>
-    
-        <p>
-          This business isn’t just about delivering fuel. It’s about continuing to serve
-          our neighbors with the same professionalism, reliability, and commitment that
-          guided our years in public service—now in a new way, one delivery at a time.
-        </p>
-      </div>
-    </section>
+    <!-- Our Story -->
+<section class="section" id="our-story">
+  <div class="container">
+    <h2 class="section-title">Our Story</h2>
+
+    <div class="card black-card story-card">
+      <p>
+        Our story begins right here in the Brazos Valley. As local first responders,
+        we’ve spent our careers serving this community when it matters most—responding
+        to emergencies, protecting families, and helping neighbors through their toughest moments.
+        That experience shaped who we are and how we approach everything we do.
+      </p>
+
+      <p class="muted">
+        We started Refuel BCS to build a reputable, locally owned mobile fueling service
+        that people can truly count on. Too often, convenience comes at the cost of service
+        or accountability. We believe it doesn’t have to. By staying local, hiring responsibly,
+        and operating with integrity, our goal is to build long-term relationships with
+        individuals, families, and businesses throughout the Brazos Valley.
+      </p>
+
+      <p class="muted">
+        At its core, Refuel BCS is about safety and convenience. Whether you’re fueling a
+        personal vehicle, equipment, generators, or a fleet, traveling to a gas station
+        isn’t always practical—or safe. By bringing fuel directly to you, we help reduce
+        unnecessary trips, time away from work or family, and exposure to late-night or
+        roadside fueling risks.
+      </p>
+
+      <p class="muted">
+        This business isn’t just about delivering fuel. It’s about continuing to serve
+        our neighbors with the same professionalism, reliability, and commitment that
+        guided our years in public service—now in a new way, one delivery at a time.
+      </p>
+    </div>
+  </div>
+</section>
+
     
 
     <!-- 3) Our Mission and Values -->
