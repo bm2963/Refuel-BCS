@@ -99,6 +99,7 @@ Post-launch content updates
 
 For questions or inquiries:
 
-📧 hello@refuelbcs.com
+📧 info@Refuelbcs.com
+
 
 © Refuel BCS. All rights reserved.
