@@ -64,6 +64,33 @@
     .card.black-card .muted {
       color: rgba(255, 255, 255, 0.75);
     }
+    /* Our Values list styling */
+    .values-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .values-list li {
+      padding: 14px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .values-list li:last-child {
+      border-bottom: none;
+    }
+
+    .value-title {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .value-desc {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
   </style>
   
   
@@ -109,7 +136,7 @@
 
         <div class="hero-cta">
           <a class="btn btn-primary" href="interested.html">Interested in the App?</a>
-          <a class="btn btn-ghost" href="#team">Meet the Founders</a>
+          <a class="btn btn-ghost" href="#team">Meet the Team</a>
         </div>
       </div>
     </section>
@@ -217,12 +244,25 @@
 
           <div class="card">
             <h3>Our Values</h3>
-            <ul class="list" style="margin:0;">
-              <li><strong>Safety-first:</strong> We follow a consistent process and put safety ahead of speed.</li>
-              <li><strong>Clear communication:</strong> Customers should always know what to expect and when.</li>
-              <li><strong>Respect your time:</strong> We’re built to reduce friction—not add more steps.</li>
-              <li><strong>Professional service:</strong> Clean, courteous, and reliable delivery every time.</li>
+            <ul class="values-list">
+              <li>
+                <span class="value-title">Safety-first</span>
+                <span class="value-desc">We follow a consistent process and put safety ahead of speed.</span>
+              </li>
+              <li>
+                <span class="value-title">Clear communication</span>
+                <span class="value-desc">Customers should always know what to expect and when.</span>
+              </li>
+              <li>
+                <span class="value-title">Respect your time</span>
+                <span class="value-desc">We’re built to reduce friction—not add more steps.</span>
+              </li>
+              <li>
+                <span class="value-title">Professional service</span>
+                <span class="value-desc">Clean, courteous, and reliable delivery every time.</span>
+              </li>
             </ul>
+            
           </div>
         </div>
       </div>
