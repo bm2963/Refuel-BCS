@@ -18,62 +18,54 @@
   <style>
     /* Darker subtitle under Meet the Team (about page only) */
     .strong-muted {
-      color: #444; /* darker than .muted, softer than pure black */
+      color: #444;
     }
-      .section-title {
-    text-align: center;
-    margin-bottom: 32px;
-    position: relative;
-  }
-
-  .section-title::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    background-color: var(--brand-red);
-    margin: 12px auto 0;
-  }
-    /* Black card story styling */
-  .story-card {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  /* Ensure text contrast inside black cards */
-  .black-card p {
-    color: #fff;
-  }
-
-  .black-card .muted {
-    color: rgba(255, 255, 255, 0.75);
-  }
-  .story-card p + p {
-  margin-top: 16px;
-  }
-  .story-card p {
-    line-height: 1.7;
-  }
-    /* Force black card styling on About page */
-  .card.black-card {
-    background: #000 !important;
-    color: #fff;
-  }
-
-  .card.black-card p {
-    color: #fff;
-  }
-
-  .card.black-card .muted {
-    color: rgba(255, 255, 255, 0.75);
-  }
-
-  .story-card {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
+  
+    /* Center + underline section titles */
+    .section-title {
+      text-align: center;
+      margin-bottom: 32px;
+      position: relative;
+    }
+  
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 3px;
+      background-color: var(--brand-red);
+      margin: 12px auto 0;
+    }
+  
+    /* Story card layout */
+    .story-card {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  
+    .story-card p {
+      line-height: 1.7;
+    }
+  
+    .story-card p + p {
+      margin-top: 16px;
+    }
+  
+    /* Black card styling (bulletproof) */
+    .card.black-card {
+      background-color: #000 !important;
+      color: #fff;
+    }
+  
+    .card.black-card p {
+      color: #fff;
+    }
+  
+    .card.black-card .muted {
+      color: rgba(255, 255, 255, 0.75);
+    }
   </style>
+  
   
 </head>
 
@@ -141,7 +133,7 @@
         <!-- Combined team bio -->
         <div class="card" style="max-width: 900px; margin: 32px auto 0;">
           <p>
-            Refuel BCS was founded by <strong>Chirstopher Braly</strong> and <strong>Christopher Lamb</strong> , two lifelong
+            Refuel BCS was founded by <strong>Christopher Braly</strong> and <strong>Christopher Lamb</strong> , two lifelong
             <strong>first responders</strong> with more than <strong> 50 years of combined emergency service experience</strong>.
             With decades spent protecting and serving the Brazos Valley, they built Refuel BCS
             on the same principles that guided their careers... <strong>safety</strong>, <strong>reliability</strong>, and <strong>trust</strong>.
