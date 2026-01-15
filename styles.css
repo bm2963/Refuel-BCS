@@ -648,8 +648,15 @@
   .nav-toggle {
     margin-left: 0;
   }
-  /* Hide "Get Fuel" button only on Interested page */
-.page-interested .site-header .btn.btn-primary {
-  display: none;
-}
+    /* Interested page: hide header CTA but preserve spacing */
+  .page-interested .site-header .header-cta {
+    visibility: hidden;     /* keeps layout space */
+    pointer-events: none;   /* disables click */
+  }
 
+  /* Mobile menu: hide CTA completely */
+  .page-interested #mobileNav .header-cta {
+    display: none;
+  }
+
+  
