@@ -64,7 +64,7 @@
     .card.black-card .muted {
       color: rgba(255, 255, 255, 0.75);
     }
-    /* Our Values list styling */
+    /* Our Values list with red checkmarks */
     .values-list {
       list-style: none;
       padding: 0;
@@ -72,12 +72,23 @@
     }
 
     .values-list li {
-      padding: 14px 0;
+      position: relative;
+      padding: 14px 0 14px 30px;
       border-bottom: 1px solid #eee;
     }
 
     .values-list li:last-child {
       border-bottom: none;
+    }
+
+    .values-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 16px;
+      color: var(--brand-red);
+      font-weight: 700;
+      font-size: 1rem;
     }
 
     .value-title {
@@ -90,7 +101,7 @@
       color: #666;
       font-size: 0.95rem;
     }
-
+    
   </style>
   
   
