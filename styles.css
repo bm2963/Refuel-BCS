@@ -352,7 +352,31 @@
     background-color: var(--brand-red);
     margin:12px auto 0;
   }
-  
+    /* Section title: centered with full-width fading underline */
+  .section-title-line {
+    text-align: center;
+    margin: 0 0 32px;
+    position: relative;
+  }
+
+  /* the underline */
+  .section-title-line::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: min(720px, 92%);   /* long line but not edge-to-edge */
+    margin: 12px auto 0;
+    border-radius: 999px;
+
+    /* fade at the ends */
+    background: linear-gradient(
+      to right,
+      rgba(159, 15, 15, 0),
+      rgba(159, 15, 15, 1),
+      rgba(159, 15, 15, 0)
+    );
+}
+
   /* =========================
      7) Cards + Components
      ========================= */
