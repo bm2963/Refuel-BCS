@@ -20,6 +20,21 @@
     .strong-muted {
       color: #444; /* darker than .muted, softer than pure black */
     }
+      .section-title {
+    text-align: center;
+    margin-bottom: 32px;
+    position: relative;
+  }
+
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: var(--brand-red);
+    margin: 12px auto 0;
+  }
+
   </style>
   
 </head>
@@ -69,82 +84,77 @@
       </div>
     </section>
 
-    <!-- 1) Meet the Founders -->
+    <!-- Meet the Team -->
     <section class="section" id="team">
       <div class="container">
-        <h2>Meet the Team</h2>
-        <p class="muted strong-muted">
-          Two founders with one goal: make refueling simpler for everyday life.
-        </p>
-    <!-- Founders group photo -->
-    <div class="founders-photo-wrap">
-      <div class="founders-photo-frame card">
-        <!-- Replace src with your actual filename/path -->
-        <img class="founders-photo" src="assets/PatrickandChris.jpg" alt="Refuel BCS founders standing together" />
-      </div>
-    </div>
+        <h2 class="section-title">Meet the Team</h2>
 
-        <!-- side-by-side on desktop (your grid-2 should already stack on mobile) -->
-        <div class="grid-2 founders-grid">
-          <div class="card founder-card">
-            <div class="founder-top no-photo">
-              <div class="founder-meta">
-                <h3>Christopher Braly (Left)</h3>
-                <p class="muted">Co-Founder</p>
-              </div>
-            </div>
-            
-
-            <p class="muted founder-bio">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, mauris a scelerisque aliquet,
-              elit metus tincidunt nibh, at feugiat nibh tellus et arcu. Donec vitae justo ut orci posuere tincidunt.
-              Morbi facilisis risus id commodo ullamcorper.
-            </p>
-          </div>
-
-          <div class="card founder-card">
-            <div class="founder-top no-photo">
-              <div class="founder-meta">
-                <h3>Christopher Lamb (Right)</h3>
-                <p class="muted">Co-Founder</p>
-              </div>
-            </div>
-            
-
-            <p class="muted founder-bio">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget justo sed ligula egestas porta.
-              Integer laoreet, lacus at placerat aliquet, elit tortor posuere leo, vitae ultrices purus ligula sed urna.
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere test cubilia curae.
-            </p>
+        <!-- Founders group photo -->
+        <div class="founders-photo-wrap">
+          <div class="founders-photo-frame card">
+            <img
+              class="founders-photo"
+              src="assets/PatrickandChris.jpg"
+              alt="Refuel BCS founders standing together"
+            />
           </div>
         </div>
 
+        <!-- Combined team bio -->
+        <div class="card" style="max-width: 900px; margin: 32px auto 0;">
+          <p>
+            Refuel BCS was founded by Christopher Braly and Christopher Lamb, two lifelong
+            first responders with more than 50 years of combined emergency service experience.
+            With decades spent protecting and serving the Brazos Valley, they built Refuel BCS
+            on the same principles that guided their careers—safety, reliability, and trust.
+          </p>
 
+          <p class="muted">
+            By bringing fuel directly to homes, businesses, and job sites, Refuel BCS delivers
+            a safer, more convenient fueling solution that is proudly owned and operated right
+            here in the community it serves.
+          </p>
+        </div>
       </div>
     </section>
+
 
     <!-- 2) Our Story -->
-    <section class="section alt" id="story">
+    <section class="section">
       <div class="container">
-        <h2>Our Story</h2>
-        <p class="muted">Why we started Refuel BCS</p>
-
-        <div class="card">
-          <p class="muted" style="margin:0;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget justo sed ligula egestas porta.
-            Integer laoreet, lacus at placerat aliquet, elit tortor posuere leo, vitae ultrices purus ligula sed urna.
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Integer sit amet
-            tellus non erat aliquet tempus.
-          </p>
-
-          <p class="muted" style="margin:12px 0 0;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, mauris a scelerisque aliquet,
-            elit metus tincidunt nibh, at feugiat nibh tellus et arcu. Donec vitae justo ut orci posuere tincidunt.
-            Morbi facilisis, risus id commodo ullamcorper, augue tortor tincidunt velit, sed luctus arcu ipsum id metus.
-          </p>
-        </div>
+        <h2 class="section-title">Our Story</h2>
+    
+        <p>
+          Our story begins right here in the Brazos Valley. As local first responders,
+          we’ve spent our careers serving this community when it matters most—responding
+          to emergencies, protecting families, and helping neighbors through their toughest moments.
+          That experience shaped who we are and how we approach everything we do.
+        </p>
+    
+        <p>
+          We started Refuel BCS to build a reputable, locally owned mobile fueling service
+          that people can truly count on. Too often, convenience comes at the cost of service
+          or accountability. We believe it doesn’t have to. By staying local, hiring responsibly,
+          and operating with integrity, our goal is to build long-term relationships with
+          individuals, families, and businesses throughout the Brazos Valley.
+        </p>
+    
+        <p>
+          At its core, Refuel BCS is about safety and convenience. Whether you’re fueling a
+          personal vehicle, equipment, generators, or a fleet, traveling to a gas station
+          isn’t always practical—or safe. By bringing fuel directly to you, we help reduce
+          unnecessary trips, time away from work or family, and exposure to late-night or
+          roadside fueling risks.
+        </p>
+    
+        <p>
+          This business isn’t just about delivering fuel. It’s about continuing to serve
+          our neighbors with the same professionalism, reliability, and commitment that
+          guided our years in public service—now in a new way, one delivery at a time.
+        </p>
       </div>
     </section>
+    
 
     <!-- 3) Our Mission and Values -->
     <section class="section" id="mission-values">
