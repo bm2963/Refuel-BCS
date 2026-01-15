@@ -635,4 +635,15 @@
   @media (max-width:600px){
     .section-title::after{ width:60px; }
   }
-  
+  /* Header alignment fix (prevents nav drifting when CTA is removed) */
+.header-inner {
+  justify-content: flex-start;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav-toggle {
+  margin-left: 12px;
+}
