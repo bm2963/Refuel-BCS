@@ -648,4 +648,8 @@
   .nav-toggle {
     margin-left: 0;
   }
-  
+  /* Hide "Get Fuel" button only on Interested page */
+.page-interested .site-header .btn.btn-primary {
+  display: none;
+}
+
